@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,600&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7a66b2a120.js" crossorigin="anonymous"></script>
+    <title>SagaIdiomas</title>
+</head>
+
+<body>
+    <!-- Comienzo menu social -->
+    <div class="menuSocial">
+        <ul class="menuSocial__ul">
+            <li><a href="https://www.linkedin.com/in/beykerestrada/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://twitter.com/BeykerEstrada" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li><a href="https://www.youtube.com/channel/UC6oy0I3F9opQr8X9XDdn8lA" target="_blank"><i
+                        class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="https://www.instagram.com/francesconbk/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </div>
+    <!-- Fin menu social -->
+    <header>
+        <!-- Comienzo cabecera -->
+        <div class="contenedor">
+            <div class="contenedor__header">
+                <div class="cabecera">
+                    <div class="contenedor__logo">
+                        <a href="../index.html">
+                            <span class="logo">Saĝa</span>
+                            <span class="logo1">Idiomas</span>
+                        </a>
+                    </div>
+                    <div class="contenedor__menu">
+                        <nav class="menu">
+                            <ul class="menu__ul">
+                                <li><a href="../index.html">INICIO</a></li>
+                                <li><a href="cursos.html">CURSOS</a></li>
+                                <li><a href="planes.html">PLANES</a></li>
+                                <li><a href="servicios.html">SERVICIOS</a></li>
+                                <li><a href="contacto.html">CONTACTO</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin cabecera -->
+    </header>
+
+    <!-- Para mantener el límite de 5 HTML hice un solo formulario para contacto en general y para postular a empleos.
+        La intención inicial era hacer una página de "trabaja con nosotros". -->
+
+    <main>
+        <div class="backgroundContacto">
+            <div class="contenedor">
+                <div class="titulosSeccion">
+                    <h1>
+                        ¡Comunícate con SaĝaIdiomas!
+                    </h1>
+                    <h2>
+                        Queremos saber de ti
+                    </h2>
+                </div>
+                <div class="contenedorPrimeraSeccion">
+                    <section class="textoContacto">
+                        <!-- Estoy separando en sections la parte de texto y el formulario para despues ordenarlos mejor con CSS -->
+                        <h3>¿Tienes preguntas sobre nuestros cursos o servicios?</h3>
+                        <p>Estaremos felices de despejar todas tus dudas.</p>
+
+                        <h3>¿Tienes alguna sugerencia?</h3>
+                        <p>¡Queremos escucharte! Ayudanos a mejorar.</p>
+
+                        <h3>¿Estás buscando empleo?</h3>
+                        <p>¡Te queremos en nuestro equipo! Como empresa estamos creciendo a un ritmo acelerado y estamos
+                            contratando
+                            profesores,
+                            tutores, traductores, transcriptores, locutores, editores de audio y agentes de servicio al
+                            cliente.
+                            Si
+                            quieres
+                            unirte a nuestro
+                            equipo de políglotas y entusiastas de los idiomas, adjunta tu CV en la sección destinada
+                            para
+                            ello y
+                            cuentanos un poco
+                            sobre tu experiencia en la sección de "mensaje"
+                        </p>
+
+                        <h3>¿Enseñas o hablas un idioma que no está en nuestra lista?</h3>
+                        <p>¡Nos parece perfecto! Estamos ampliando nuestra oferta; así que nos caes como anillo al dedo.
+                            Te
+                            queremos
+                            en nuestro equipo.</p>
+                    </section>
+
+                    <section class="contenedorForm">
+                        <div class="positionForm">
+                            <form class="form" id="contactForm">
+                                <div class="contenedorFormSection">
+                                    <div class="form__section">
+                                        <p>Asunto</p>
+                                        <select name="asunto" required class="form__input">
+                                            <option value="">Seleccione una opción</option>
+                                            <option value="pregunta">Tengo una consulta</option>
+                                            <option value="sugerencia">Tengo una sugerencia</option>
+                                            <option value="empleo">Busco empleo</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__section">
+                                        <p>Nombre</p>
+                                        <input type="text" name="nombre" required class="form__input">
+                                    </div>
+                                    <div class="form__section">
+                                        <p>Correo</p>
+                                        <input type="email" name="email" placeholder="Ingresa tu correo" required
+                                            class="form__input">
+                                    </div>
+                                    <div class="form__section">
+                                        <p>Mensaje</p>
+                                        <textarea name="mensaje" cols="30" rows="10" required
+                                            class="form__input textArea"
+                                            placeholder="Escribe tu mensaje. (Si quieres postular a un empleo, cuentanos sobre tu experiencia laboral)"></textarea>
+                                    </div>
+                                </div>
+                                <fieldset class="datosPostulacion">
+                                    <legend>Datos de postulación</legend>
+                                    <div class="form__fieldset">
+                                        <label for="puestoTrabajo">De que quieres trabajar</label>
+                                        <select name="puestoTrabajo">
+                                            <option value="">Selecciona un cargo</option>
+                                            <option value="profesor">Quiero ser profesor/a</option>
+                                            <option value="tutor">Quiero ser tutor/a</option>
+                                            <option value="traductor">Quiero ser traductor/a</option>
+                                            <option value="transcriptor">Quiero ser transcriptor/a</option>
+                                            <option value="locutor">Quiero ser locutor/a</option>
+                                            <option value="editorAudio">Quiero ser editor/a de audio</option>
+                                            <option value="serviciocliente">Atención al cliente</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__fieldset">
+                                        <label for="resume">¿Nos muestras tu CV?</label>
+                                        <input type="file" name="resume" accept=".pdf, .doc, .docx, .png, .jpeg">
+                                    </div>
+                                </fieldset>
+                                <div class="contenedorCheckbox">
+                                    <div class="form__checkbox">
+                                        <input type="checkbox" name="TyC" required> Acepto los Términos y condiciones y
+                                        la
+                                        política
+                                        de
+                                        privacidad
+                                    </div>
+                                    <div class="form__checkbox">
+                                        <input type="checkbox" name="newsletter"> Suscribirme al newsletter.
+                                    </div>
+                                    <div class="form__checkbox">
+                                        <input type="checkbox" name="alertaEmpleo"> Quiero recibir alertas de empleo
+                                    </div>
+                                </div>
+
+                                <div class="contenedorBtnForm">
+                                    <input type="reset" value="Borrar" class="btnForm">
+                                    <input type="submit" value="Enviar" class="btnForm">
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+
+
+                <section class="ubicacionMaps">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d741.9509241569742!2d-7.43810471190422!3d41.94006939626797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3aea75f28d490f%3A0x30bf84794ca6c029!2sAv.%20de%20Portugal%2C%202%2C%2032600%20Ver%C3%ADn%2C%20Ourense%2C%20Espa%C3%B1a!5e0!3m2!1ses!2scl!4v1654429490017!5m2!1ses!2scl"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="menuSocial">
+            <ul class="menuSocial__ul">
+                <li><a href="https://www.linkedin.com/in/beykerestrada/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://twitter.com/BeykerEstrada" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li><a href="https://www.youtube.com/channel/UC6oy0I3F9opQr8X9XDdn8lA" target="_blank"><i
+                            class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com/francesconbk/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="contenedor lineaFooter">
+            <div class="newsletter">
+                <form action="">
+                    <label for="email">Suscríbete al newsletter</label>
+                    <input type="email" name="email" placeholder="ingresa tu correo" class="inputEmail">
+                    <input type="submit" value="Suscribirme" class="newsletter__btn">
+                </form>
+            </div>
+        </div>
+        <div class=" copyright info-contacto">
+            <span><i class="fa-solid fa-location-dot"></i> Av. de Portugal, 2, 32600 Verín, Ourense, España | <i
+                    class="fa-brands fa-whatsapp"></i> +34 555 000 67 | <i class="fa-solid fa-envelope"></i>
+                contacto@sagaidiomas.com</span>
+        </div>
+        <div class="copyright">
+            <span>&copy; 2022, SaĝaIdiomas</span>
+        </div>
+    </footer>
+</body>
+
+</html>

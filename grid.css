@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+/* ESTILOS GENERALES DEL SITIO */
+
+/* Contenedor es clase para limitar el contenido de la página a un 
+ancho máxino */
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+/* Fin estilos contenedor */
+
+/* Comienzo estilos menu social */
+.menuSocial {
+    height: 50px;
+    background-color: #5b63a4;
+}
+.menuSocial__ul {
+    padding: 10px 30px;
+    text-align: right;
+}
+.menuSocial__ul li{
+    display: inline-block;
+}
+.menuSocial__ul li a {
+    font-size: 20px;
+    color: #bbb;
+    padding: 8px;
+}
+/* Fin estilos menu social */
+
+/* Comienzo estilos cabecera */
+header {
+    background-color: #5b63a4;
+    position: sticky;
+    top: 0px;
+    z-index: 5000;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.3);
+}
+
+
+
+.contenedor__header {
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+/* Estilos logo */
+.contenedor__logo {
+    display: inline-block;
+    position: absolute;
+    height: 60%;
+    margin: 16.5px 0px;
+    
+}
+.contenedor__logo a {
+    text-decoration: none;
+}
+.logo {
+    font-size: 40px;
+    font-weight: 700;
+    color: #5b63a4;
+    background-color: #fff;
+}
+.logo1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+}
+/* Fin estilos logo */
+
+/* Comienzo estilos menu navegación  */
+.contenedor__menu {
+    display: inline-block;
+    text-align: right;
+    font-weight: bold;
+    margin: 30px 0px;
+}
+
+.menu {
+    position: absolute;
+    right: 0px;
+}
+
+.menu__ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.menu__ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+/* Fin estilos menu navegacion */
+
+/* Fin estilos cabecera */
+
+/* Estilos botones */
+.btnPrimario {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #f1557a;
+    padding: 18px 35px;
+    border-radius: 4px;
+    box-shadow: -3px 4px 14px 0px rgba(0,0,0,0.63);
+}
+/* Fin estilos botones */
+
+
+/* Estilos footer */
+footer {
+    background-color: #5b63a4;
+}
+
+.newsletter {
+    margin: 30px 0px 800px 0px;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+}
+
+.inputEmail {
+    font-size: 20px;
+    width: 300px;
+}
+
+.newsletter__btn {
+    font-size: 20px;
+    background-color: #f1557a;
+    padding: 4px 10px;
+    color: #fff;
+}
+
+.lineaFooter {
+    height: 50px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #fff;
+}
+
+.copyright {
+    padding: 10px 0px 40px 0px;
+    height: 80px;
+    text-align: center;
+}
+
+.info-contacto {
+    height: 30px;
+    padding-bottom: 30px;
+}
+
+.copyright span {
+    font-size: 20px;
+    color: #bbb;
+}
+/* Fin estilos footer */
+
+/* FIN ESTILOS GENERALES DEL SITIO */
+
+
+/* Comienzo estilos seccion presentacion */
+.backgroundPurple {
+    background-color: #5b63a4;
+}
+
+
+
+.contenedor__presentacion {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.contenedor__presentacion__texto {
+    display: inline-block;
+    width: 600px;
+    height: 600px;
+}
+
+.presentacion__texto {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+
+.presentacion__texto__span {
+    color: #5b63a4;
+    background-color: #fff;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 80%;
+    margin-top: 80px;
+    text-align: center;
+    
+}
+
+.presentacion__texto__span span {
+    display: block;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.presentacion__texto__h2 {
+    color: #fff;
+    font-size: 25px;
+}
+
+.presentacion__texto__p {
+    width: 300px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 0px 50px 0px;
+}
+
+
+
+.presentacion__img {
+    display: inline-block;
+    width: 600px;
+    height: 600px;
+    position:absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.imgPrincipal {
+    width: 500px;
+    margin: 50px;
+    z-index: 2;
+}
+.espaciadorPurple {
+    height: 100px;
+    background-color: #5b63a4;
+}
+/* Fin estilos seccion presentacion */
+
+/* Fin estilos descripcion sitio */
+
+/* Estilos catalogo de idiomas */
+.backgroundPinkRed {
+    background-color: #f1557a;
+    height: 600px;
+}
+
+.espaciadorPinkRed {
+    height: 100px;
+    background-color: #f1557a;
+}
+
+.idiomas__h2 {
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 80px;
+}
+
+.contenedor__idiomas {
+    height: 250px;
+    width: 100%;
+    position: relative;
+}
+
+.idiomas {
+    height: 200px;
+    width: 130px;
+    display: inline-block;
+}
+
+.idiomas-4 {
+    margin: 0px 80px;
+}
+
+.idiomas-2 {
+    margin: 0px 230px;
+}
+
+.bandera {
+    width: 130px;
+}
+
+.idiomas p {
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+/* Fin estilos catalogo de idiomas */
+
+/* Comienzo catálogo de planes */
+.backgroundBlue {
+    background-color: #2867b2;
+    padding: 20px 0px 30px 0px;
+    height: 600px;
+}
+.espaciadorBlue {
+    height: 100px;
+    background-color: #2867b2;
+}
+.planes__h2 {
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 80px;
+}
+
+.planes {
+    display: inline-block;
+    width: 250px;
+    height: 450px;
+    background-color: #5b63a4;
+    border-radius: 30px;
+    margin: auto 20px;
+    box-shadow: -3px 4px 14px 0px rgba(0,0,0,0.63);
+}
+
+.planes__img {
+    height: 150px;
+    width: 220px;
+    background-color: #fff;
+    border-radius: 30px;
+    margin: 15px 30px 15px 15px;
+}
+
+.planes__img img {
+    height: 140px;
+    width: 200px;
+    padding: 10px 10px 10px 20px;
+}
+
+.planes__h3 {
+    color: #f9b850;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+.planes__p {
+    color: #fff;
+    font-size: 20px;
+    width: 200px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    height: 80px;
+}
+
+
+.btnPlanes {
+    margin: 40px;
+    display: block;
+}
+
+/* Fin catálogo de planes */
+
+
+/* Estilos catalogo de servicios */
+
+.catalogoServicios {
+    background-color: #f1557a;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contenedor__servicios {
+    height: 600px;
+    padding: 5px;
+    width: 1200px;
+}
+
+.espaciadorPinkRed-mitad {
+    height: 10px;
+    background-color: #f1557a;
+}
+
+.servicios__h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 80px;
+}
+.contenedor__imgServicios, .contenedor__servicios__interno {
+    display: inline-block;
+    width: 590px;
+    height: 450px;
+    padding: 10px 20px;
+}
+.contenedor__imgServicios img {
+    width: 450px;
+    height: 450px;
+    margin: 5px;
+    background-color: #5b63a4;
+    border-radius: 50%;
+}
+.servicios {
+    background-color: #5b63a4;
+    height: 140px;
+    width: 500px;
+    margin: 30px 45px;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: -3px 4px 14px 0px rgba(0,0,0,0.63);
+}
+.serviciosImg {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin: 10px 10px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.imgServicios {
+    width: 100px;
+    margin: 10px;
+}
+
+.servicios__texto {
+    display: inline-block;
+    height: 120px;
+    width: 340px;
+    margin: 10px;
+    padding: 20px 0px;
+    position: absolute;
+}
+
+.servicios__h3 {
+    color: #fff;
+    height: 50px;
+    margin: 5px;
+    font-size: 25px;
+    text-align: left;
+}
+
+
+
+.btnServicios {
+    padding: 10px 18px;
+}
+
+/* Fin estilos catalogo de servicios */
