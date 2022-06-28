@@ -254,7 +254,41 @@ footer {
     background-image: url(../multimedia/img/wd1.svg);
 }
 
+.w1 {
+    animation: w1 7s linear infinite;
+}
+.w2 {
+    animation: w2 7s linear -.125s infinite, desplazamiento 7s ease -.125s infinite; 
+    opacity: 0.5;
+   
+}
 
+@keyframes w1 {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@keyframes w2 {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@keyframes desplazamiento {
+    0% , 100% {
+        transform: translateY(-25px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
 
 /* Fin estilos efecto wave */
 
