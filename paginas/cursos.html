@@ -16,8 +16,8 @@
 </head>
 
 <body>
-    <!-- Comienzo menu social -->
-    <div class="menuSocial">
+     <!-- Comienzo menu social -->
+     <div class="menuSocial">
         <ul class="menuSocial__ul">
             <li><a href="https://www.linkedin.com/in/beykerestrada/" target="_blank"><i
                         class="fa-brands fa-linkedin-in"></i></a></li>
@@ -30,7 +30,7 @@
         </ul>
     </div>
     <!-- Fin menu social -->
-    <header>
+    <header id="header">
         <!-- Comienzo cabecera -->
         <div class="contenedor">
             <div class="contenedor__header">
@@ -43,6 +43,10 @@
                     </div>
                     <div class="contenedor__menu">
                         <nav class="menu">
+                            <input type="checkbox" id="check">
+                            <label for="check" class="checkBtn">
+                                <i class="fa-solid fa-bars"></i>
+                            </label>
                             <ul class="menu__ul">
                                 <li><a href="../index.html">INICIO</a></li>
                                 <li><a href="cursos.html">CURSOS</a></li>
@@ -58,10 +62,10 @@
         <!-- Fin cabecera -->
     </header>
     <main>
-        <section class="catalogoCursos">
+        <section class="catalogoCursos backgroundGreen">
             <div class="contenedor">
                 <h1 class="cursos__h1">Conoce nuestros cursos de idiomas disponibles</h1>
-                <div class="contenedorTarjetas">
+                <div class="tarjetas__grid__layout">
                     <div class="tarjeta">
                         <div class="tarjeta__titulo">
                             <h3 class="tarjeta__h3">
@@ -233,9 +237,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="contenedorTarjetas">
                     <div class="tarjeta">
                         <div class="tarjeta__titulo">
                             <h3 class="tarjeta__h3">
@@ -247,7 +249,8 @@
                                 <p>
                                     Escala en tu carrera aprendiendo a desenvolverte en reuniones de negocios
                                     importantes, realizar
-                                    presentaciones avanzadas, codearte con altos directivos y negociar como experto/a
+                                    presentaciones avanzadas, codearte con altos directivos y negociar como
+                                    experto/a
                                 </p>
                             </div>
                         </div>
@@ -404,9 +407,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="contenedorTarjetas">
                     <div class="tarjeta">
                         <div class="tarjeta__titulo">
                             <h3 class="tarjeta__h3">
@@ -463,11 +463,10 @@
                 </div>
             </div>
         </section>
-        <section class="contenedorDatosContacto">
-            <div class="contenedor">
+        <section class="contenedorDatosContacto datosContacto__Green">
+            <div class="contenedor datosContacto__Green">
                 <h2>¿Buscas algo diferente?</h2>
-                <p>Si necesitas un curso personalizado o tienes dudas <a
-                        href="contacto.html#contactForm">Déjanos tus
+                <p>Si necesitas un curso personalizado o tienes dudas <a href="contacto.html#contactForm">Déjanos tus
                         datos</a> y te contactaremos encantados</p>
                 <p>También puedes escribirnos al Whatsapp: +34 555 000 67 o al correo: servicios@sagaidiomas.com</p>
             </div>
@@ -475,7 +474,7 @@
     </main>
 
     <footer class="footer">
-        <div class="menuSocial">
+        <div class="menuSocial menuSocial__footer">
             <ul class="menuSocial__ul">
                 <li><a href="https://www.linkedin.com/in/beykerestrada/" target="_blank"><i
                             class="fa-brands fa-linkedin-in"></i></a></li>
@@ -488,21 +487,9 @@
             </ul>
         </div>
         <div class="contenedor lineaFooter">
-            <div class="newsletter">
-                <form action="">
-                    <label for="email">Suscríbete al newsletter</label>
-                    <input type="email" name="email" placeholder="ingresa tu correo" class="inputEmail">
-                    <input type="submit" value="Suscribirme" class="newsletter__btn">
-                </form>
-            </div>
-        </div>
-        <div class=" copyright info-contacto">
-            <span><i class="fa-solid fa-location-dot"></i> Av. de Portugal, 2, 32600 Verín, Ourense, España | <i
-                    class="fa-brands fa-whatsapp"></i> +34 555 000 67 | <i class="fa-solid fa-envelope"></i>
-                contacto@sagaidiomas.com</span>
         </div>
         <div class="copyright">
-            <span>&copy; 2022, SaĝaIdiomas</span>
+            <span>&copy; 2022 | SaĝaIdiomas</span>
         </div>
     </footer>
 </body>
