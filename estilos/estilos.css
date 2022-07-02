@@ -156,7 +156,6 @@ header {
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
-    background-color: #f9c10d;
     padding: 18px 30px;
     border-radius: 30px;
     border: 1px solid #292f36;
@@ -165,6 +164,7 @@ header {
 .btnPrimario:hover {
     box-shadow: -3px 4px 14px 0px rgba(0,0,0,0.63);
     transition: 0.3s;
+    background-color: #f9c10d;
     color: #fff;
 }
 .btnPrimario:active {
@@ -172,6 +172,14 @@ header {
 
 }
 
+.btnNegativo {
+    color: #eaeaea;
+    border: 1px solid #eaeaea;
+}
+.btnNegativo:hover {
+    color: #292f36;
+    border: 1px solid #292f36;
+}
 
 /* Fin estilos botones */
 
@@ -555,13 +563,14 @@ footer {
     font-size: 30px;
     font-weight: bold;
     align-self: flex-start;
+    padding: 10px;
 }
 
 .planes__p {
     color: #fff;
     font-size: 20px;
     width: 200px;
-    height: 80px;
+    height: 120px;
     align-self: flex-start;
 }
 
@@ -569,6 +578,7 @@ footer {
 .btnPlanes {
     display: block;
     border-radius: 16px;
+    text-align: center;
 }
 
 
@@ -868,6 +878,10 @@ footer {
 
 /* ESTILOS PÁGINA PLANES */
 
+.background__gradient {
+    background: rgb(63,163,156);
+    background: linear-gradient(0deg, rgba(63,163,156,1) 0%, rgba(42,129,123,1) 100%);
+}
 .section__catalogoPlanes, .contenedorTextoPlanes {
     padding: 40px;
 }
@@ -892,14 +906,12 @@ footer {
 
 .tarjeta__p__planes {
     font-size: 18px;
-    padding: 10px 25px;
+    padding: 10px;
     height: 120px;
     margin-bottom: 50px
 }
 
-.tarjeta__p__planes p {
-    margin-bottom: 20px;
-}
+
 
 
 
@@ -908,19 +920,14 @@ footer {
     margin: 50px 0px;
     position: relative;
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .precio__span {
-    color: red;
+    color: rgb(189, 67, 67);
 }
 
-.btnIdiomas  {
-    display: inline-block;
-    height: 70px;
-    width: 100%;
-    text-align: center;
-}
+
 
 /* FIN ESTILOS PÁGINA PLANES */
 
@@ -946,8 +953,8 @@ footer {
 
 .tarjeta__p__servicios {
     height: 250px;
-    font-size: 18px;
-    padding: 10px 25px;
+    font-size: 20px;
+    padding: 10px;
     margin-bottom: 30px
 }
 
@@ -1015,7 +1022,7 @@ footer {
 
 .contenedorForm {
     background-color: #EFF3F5;
-    padding: 40px;
+    padding: 60px;
     color: #292f36;  
     border-radius: 16px;
     box-shadow: -3px 4px 14px 0px rgba(0,0,0,0.63);
@@ -1051,14 +1058,13 @@ footer {
 .ubicacionMaps {
     grid-area: mapa;
 }
-.form__input {
-    width: 100%;
-    padding: 3px 0px;
-}
+
 
 .contenedorFormSection {
+    position: relative;
+    --color: #5757577e;
+    display: grid;    
     justify-items:stretch;
-    display: grid;
     grid-template-rows: repeat(3, auto);
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -1068,25 +1074,55 @@ footer {
     "btn btn";
 }
 
-.contenedorFormSection p {
+.form__input {
+    width: 100%;
+    padding: 3px 0px;
+    background: none;
+    background: rgb(221,229,233);
+    background: linear-gradient(0deg, rgba(221,229,233,1) 0%, rgba(239,243,245,1) 100%);
+    color: #292f36;
+    border: none;
+    outline: none;
+    font-family: 'Roboto flex', sans-serif;
     font-size: 20px;
-    padding-bottom: 10px;
+    border-bottom: 1px solid var(--color);
 }
 
+.form__input:focus + .form__label,
+ .form__input:not(:placeholder-shown) + .form__label {
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #3fa39c;
+}
+
+.form__section {
+    position: relative;
+    font-size: 16px;
+}
+.form__label {
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(5px);
+    transition: transform .5s, color .3s;
+
+}
 
 .textArea {
-    width: 209%;
+    width: 207%;
 }
 
 .formBotones {
     grid-area: btn;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 
 .btnForm {
-    width: 45%;
+    width: 100%;
     height: 30px;
     background-color: #f9c10d;
 }

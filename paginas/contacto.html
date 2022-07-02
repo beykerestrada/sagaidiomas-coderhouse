@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,600&display=swap"
         rel="stylesheet">
+        <link rel="icon" type="image/svg+xml" href="../multimedia/img/favicon.svg" />
     <script src="https://kit.fontawesome.com/7a66b2a120.js" crossorigin="anonymous"></script>
     <title>SagaIdiomas</title>
 </head>
@@ -65,8 +66,8 @@
     <!-- Para mantener el límite de 5 HTML hice un solo formulario para contacto en general y para postular a empleos.
         La intención inicial era hacer una página de "trabaja con nosotros". -->
 
-    <main>
-        <div class="backgroundContacto backgroundGreen">
+    <main class="background__gradient">
+        <div class="backgroundContacto">
             <div class="contenedor">
                 <div class="titulosSeccion">
                     <h1>
@@ -87,21 +88,23 @@
                         <form class="form" id="contactForm">
                             <div class="contenedorFormSection">
                                 <div class="form__section nombre">
-                                    <p>Nombre</p>
-                                    <input type="text" name="nombre" required class="form__input">
+                                    <input type="text" name="nombre" id="nombre" required class="form__input" placeholder=" ">
+                                    <label for="nombre" class="form__label">Nombre:</label>
+                                    <span class="form__line"></span>
                                 </div>
                                 <div class="form__section correo">
-                                    <p>Correo</p>
-                                    <input type="email" name="email" placeholder="Ingresa tu correo" required
+                                    <input type="email" name="email" id="correo" placeholder=" " required
                                         class="form__input">
+                                        <label for="correo" class="form__label">Correo:</label>
+                                    <span class="form__line"></span>
                                 </div>
                                 <div class="form__section mensaje">
-                                    <p class="pMensaje">Mensaje</p>
-                                    <textarea name="mensaje" cols="30" rows="10" required class="form__input textArea"
-                                        placeholder="Escribe tu mensaje."></textarea>
+                                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" required class="form__input textArea"
+                                        placeholder=" "></textarea>
+                                        <label for="mensaje" class="form__label">Mensaje:</label>
+                                    <span class="form__line"></span>
                                 </div>
                                 <div class="contenedorBtnForm formBotones">
-                                    <input type="reset" value="Borrar" class="btnForm">
                                     <input type="submit" value="Enviar" class="btnForm">
                                 </div>
                             </div>
