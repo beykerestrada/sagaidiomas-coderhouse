@@ -8,6 +8,7 @@ html {
     font-size: 62.5%;
 }
 
+
 /* ESTILOS GENERALES DEL SITIO */
 
 /* Contenedor es clase para limitar el contenido de la página a un 
@@ -160,6 +161,8 @@ header {
     border-radius: 30px;
     border: 1px solid #292f36;
 }
+
+
 
 .btnPrimario:hover {
     box-shadow: -3px 4px 14px 0px rgba(0,0,0,0.63);
@@ -354,6 +357,24 @@ footer {
     background-color: transparent;
     border: 1px solid #292f36;
 }
+
+.btnMain {
+    display: inline-block;
+    animation: scale linear 2s infinite;
+}
+@keyframes scale {
+    0%, 100% {
+       transform: rotateZ(0deg);
+    }
+    30% {
+        transform: rotateZ(3deg);
+    }
+
+    70% {
+        transform: rotateZ(-3deg);
+    }
+}
+
 .btnMain:hover {
     background-color: #f9c10d;
 }
