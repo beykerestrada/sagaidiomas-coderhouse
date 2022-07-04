@@ -1,24 +1,17 @@
 * {
-    
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Flex', sans-serif;
 }
-html {
-    font-size: 62.5%;
-}
+
 
 
 /* ESTILOS GENERALES DEL SITIO */
 
 /* Contenedor es clase para limitar el contenido de la página a un 
 ancho máxino */
-.contenedor {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 auto;
-}
+
 /* Fin estilos contenedor */
 
 /* Comienzo estilos menu social */
@@ -321,9 +314,7 @@ footer {
 
 .contenedor__presentacion {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "presentacion__texto presentacion__img";
+   
 }
 
 .presentacion__texto {
@@ -409,35 +400,40 @@ footer {
 
 /* Estilos catalogo de idiomas */
 
+
+
 .catalogoIdiomas {
+    height: 100vh;
     background-color: #f9c10d;
-    position: relative;
-    height: 80vh;
-}
-.contenedorIdiomas-grid {
-    display: grid;
-    justify-content: center;
-    column-gap: 16px;
-    row-gap: 50px;
-    grid-template-columns: repeat(6, auto);
-    grid-template-rows: 0.5fr 1fr;
-    grid-template-areas: 
-    "grid__h2 grid__h2 grid__h2 grid__h2 grid__h2 grid__h2"
-    "idioma1 idioma2 idioma3 idioma4 idioma5 idioma6";
 }
 
-
-.grid__h2 {
-    grid-area: grid__h2;
+@media screen and (max-width: 400px) {
+    .catalogoIdiomas {
+        height: max-content;
+    }
 }
 
+.backgroundIdiomas {
+    background-color: #f9c10d;
+}
 
+.contenedor__Idiomas {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 
-.idiomas__h2 {
-    font-size: 40px;
+.boxIdiomas {
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+}
+
+.idiomas__h2 h2 {
+    font-size: 60px;
     text-align: center;
     color: #292f36;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
 }
 
 
@@ -480,6 +476,10 @@ footer {
     
 }
 
+.catalogoIdiomas {
+    position: relative;
+}
+
 .waveIdiomas::after {
     content: "";
     border-top-left-radius: 50% 100%;
@@ -499,46 +499,29 @@ footer {
     background-color: #292f36;
 }
 
-.planes__grid {
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    column-gap: 16px;
-    row-gap: 16px;
-    justify-items: center;
-    align-content: center;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-    "planes__h2 planes__h2 planes__h2 planes__h2"
-    "planes1 planes2 planes3 planes4";
-}
 
-.planes1 {
-    grid-area: planes1;
-}
-.planes2 {
-    grid-area: planes2;
-}
-.planes3 {
-    grid-area: planes3;
-}
-.planes4 {
-    grid-area: planes4;
-}
 
-.planes__h2 {
+
+
+.planes__h2 h2 {
     grid-area: planes__h2;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     color: #fff;
     padding-bottom: 80px;
 }
-
-.planes {
+.contenedorTarjetas {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
     background: rgba(255, 255, 255, 0.1);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     border-top: 1px solid rgba(255, 255, 255, 0.5) ;
@@ -548,58 +531,29 @@ footer {
 
 
 .card {
-    display: flex;
-    transition: all .3s;
+    transition: all .5s;
 }
 .card:hover {
     transform: translateY(-10px);
 }
-
-.card:hover .planes .planes__img img {
+.card-img-top {
+    transition: all .5s;
+}
+.card:hover .card-img-top {
     transform: scale(1.1);
 }
 
-
-.planes__img {
-    height: 150px;
-    width: 220px;
-    background-color: #f9c10d;
-    border-radius: 16px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.planes__img img {
-    width: 80%;
-    height: 90%;
-    transition: all .3s;
-}
-
-
-
-.planes__h3 {
+.card-title, .card-text {
     color: #eaeaea;
-    font-size: 30px;
-    font-weight: bold;
-    align-self: flex-start;
-    padding: 10px;
-}
-
-.planes__p {
-    color: #fff;
-    font-size: 20px;
-    width: 200px;
-    height: 120px;
-    align-self: flex-start;
 }
 
 
 .btnPlanes {
     display: block;
     border-radius: 16px;
+    border: 1px solid #eaeaea;
     text-align: center;
+    color: #eaeaea;
 }
 
 
@@ -615,22 +569,12 @@ footer {
     position: relative;
 }
 
-.contenedor__servicios-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 25%);
-    grid-template-areas: 
-    "servicios__h2 servicios__h2"
-    "imgServicios servicios1"
-    "imgServicios servicios2"
-    "imgServicios servicios3";
-}
 
 
-.servicios__h2 {
+.servicios__h2 h2 {
     grid-area: servicios__h2;
-    font-size: 40px;
-    color: #292f36;
+    font-size: 50px;
+    color: #eaeaea;
     text-align: center;
     padding-bottom: 80px;
 }
@@ -661,7 +605,7 @@ footer {
     height: 140px;
     width: 500px;
     padding: 10px;
-    margin: 30px 45px;
+    margin-bottom: 30px;
     border-radius: 30px;
     background: rgba(255, 255, 255, 0.1);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -670,6 +614,7 @@ footer {
     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
     transition: all .3s;
 }
+
 
 
 .servicios:hover {
@@ -717,7 +662,15 @@ footer {
     padding: 10px 18px;
 }
 
-
+@media screen and (max-width: 380px) {
+    .servicios {
+        width: 100%;
+    }
+    .servicios__texto {
+        height: 120px;
+        width: 130px;
+    }
+}
 
 
 
@@ -742,12 +695,10 @@ footer {
     color: #fff;
 }
 
-.tarjetas__grid__layout {
-    display: grid;
-    justify-items: center;
-    gap: 40px;
-    grid-auto-rows: 600px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) );
+.tarjetas__layout {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .contenedorTexto {
@@ -784,8 +735,9 @@ footer {
     flex-direction: column;
     background-color: #eaeaea;
     padding: 20px;
+    margin-bottom: 40px;
     width: 300px;
-    height: 550px;
+    height: 600px;
     border-radius: 16px;
     font-size: 18px;
     background: rgba(255, 255, 255, 0.1);
@@ -797,8 +749,9 @@ footer {
 
 .tarjeta__titulo {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
     border: 2px solid #292f36;
     background-color: #EFF3F5;
     background-position: center;
@@ -822,7 +775,7 @@ footer {
     font-size: 18px;
     padding: 20px 10px;
     height: 80px;
-    margin-bottom: 50px
+    margin-bottom: 80px
 }
 
 .tarjeta__p p {
@@ -845,14 +798,12 @@ footer {
     color: #292f36;
 }
 
-.nivel {
-    justify-self: flex-start;
-}
 
-.nivel li, .modalidad li {
+.nivel ul li, .modalidad ul li {
     list-style-type: none;
     font-size: 18px;
     color: #EFF3F5;
+    text-align: left;
 }
 
 .idiomasDisponibles {
@@ -866,21 +817,18 @@ footer {
     color: #EFF3F5;
 }
 
-.izquierda, .derecha {
-    display: inline-block;
-    width: 150px;
-}
+
 
 .izquierda {
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: -30px;
 }
 
 .derecha {
     position: absolute;
     top: 0px;
-    right: 0px; 
+    right: 60px; 
 }
 
 .izquierda li, .derecha li {
@@ -938,7 +886,7 @@ footer {
 
 .precio {
     height: 60px;
-    margin: 50px 0px;
+    margin: 80px 0px 30px 0px;
     position: relative;
     text-align: center;
     font-size: 30px;
@@ -972,11 +920,11 @@ footer {
     padding-bottom: 40px;
 }
 
-.tarjeta__p__servicios {
+.tarjeta__p__servicios p {
     height: 250px;
     font-size: 20px;
     padding: 10px;
-    margin-bottom: 30px
+    margin-bottom: 50px
 }
 
 .contenedorDatosContacto {
@@ -1047,17 +995,17 @@ footer {
     color: #292f36;  
     border-radius: 16px;
     box-shadow: -3px 4px 14px 0px rgba(0,0,0,0.63);
-    display: grid;
+   /*  display: grid;
     column-gap: 20px;
     row-gap: 40px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto auto;
     grid-template-areas: 
     "formulario formulario formulario texto texto"
-    "mapa mapa mapa mapa mapa";
+    "mapa mapa mapa mapa mapa"; */
 }
 .textoComplementario {
-    grid-area: texto;
+    display: inline-block;
     background-color: #292f36;
     padding: 20px;
     color: #EFF3F5;
@@ -1077,6 +1025,7 @@ footer {
     grid-area: formulario;
 }
 .ubicacionMaps {
+    margin-top: 50px;
     grid-area: mapa;
 }
 
@@ -1110,7 +1059,7 @@ footer {
 }
 
 .form__input:focus + .form__label,
- .form__input:not(:placeholder-shown) + .form__label {
+.form__input:not(:placeholder-shown) + .form__label {
     transform: translateY(-12px) scale(.7);
     transform-origin: left top;
     color: #3fa39c;
@@ -1339,9 +1288,15 @@ footer {
 
 /* CELULAR */
 
-
+@media screen and (max-width: 780px) {
+    .presentacion__texto__h1 h1 {
+        font-size: 35px;
+    }
+    .presentacion__texto__h2 h2 {
+        font-size: 25px;
+    }
+}
 @media screen and (max-width: 640px) {
-
     .presentacion__texto__h1 h1 {
         font-size: 40px;
     }
