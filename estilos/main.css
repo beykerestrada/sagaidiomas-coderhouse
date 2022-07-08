@@ -465,8 +465,7 @@ footer {
         grid-template-areas: "planes__h2 planes__h2" "planes1 planes2" "planes3 planes4"; } }
     @media screen and (max-width: 640px) {
       .catalogoPlanes .contenedor .planes__grid {
-        justify-content: center;
-        align-items: center;
+        place-items: center;
         row-gap: 50px;
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
@@ -487,11 +486,12 @@ footer {
       padding-bottom: 80px; }
 
 .card {
+  height: 450px;
   display: flex;
   transition: all .3s; }
   @media screen and (max-width: 640px) {
     .card {
-      width: 450px;
+      width: 400px;
       height: 600px; } }
   @media screen and (max-width: 480px) {
     .card {
@@ -510,7 +510,7 @@ footer {
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5); }
     @media screen and (max-width: 640px) {
       .card .planes {
-        width: 450px;
+        width: 400px;
         height: 600px;
         margin: auto; } }
     @media screen and (max-width: 480px) {
@@ -529,7 +529,7 @@ footer {
       align-items: center; }
       @media screen and (max-width: 640px) {
         .card .planes .planes__img {
-          width: 400px;
+          width: 350px;
           height: 200px; } }
       @media screen and (max-width: 480px) {
         .card .planes .planes__img {
@@ -580,20 +580,6 @@ footer {
           width: 250px;
           text-align: center;
           align-self: center; } }
-      .card .planes .planes__p .btnPlanes {
-        display: block;
-        border-radius: 16px;
-        text-align: center; }
-      @media screen and (max-width: 640px) {
-        .card .planes .planes__p .planes__btn {
-          display: block;
-          width: 300px;
-          text-align: center; } }
-      @media screen and (max-width: 640px) {
-        .card .planes .planes__p .planes__btn {
-          width: 200px; } }
-      .card .planes .planes__p .planes__btn a {
-        font-size: 30px; }
   .card:hover {
     transform: translateY(-10px); }
     .card:hover img {
