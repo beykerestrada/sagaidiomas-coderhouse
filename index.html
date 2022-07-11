@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/main.css">
+    <link rel="stylesheet" href="estilos/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="estilos/animate.css">
     <link rel="icon" type="image/svg+xml" href="multimedia/img/favicon.svg" />
     <script src="https://kit.fontawesome.com/7a66b2a120.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>SagaIdiomas</title>
 </head>
 
@@ -74,7 +76,7 @@
             <!-- Final animacion wave -->
             <div class="contenedor">
                 <div class="contenedor__presentacion">
-                    <div class="presentacion__texto">
+                    <div class="presentacion__texto" data-aos="fade-right">
                         <div class="presentacion__texto__h1">
                             <h1>APRENDE <span class="spanIdiomas">IDIOMAS</span> enfocándote en tus necesidades</h1>
                         </div>
@@ -95,6 +97,80 @@
         </section>
         <!-- Fin seccion presentacion -->
 
+        <!-- Seccion beneficios -->
+        <section class="seccionBeneficios">
+            <div class="contenedor">
+                <h2 class="beneficiosH2"> ¿Por qué SagaIdiomas?</h2>
+                <p class="beneficiosP">Al inscribirte en SagaIdiomas obtendrás:</p>
+                <div class="contenedorBeneficios">
+                    <div class="contenedorDots beneficio1" data-aos="fade-down-right">
+                        <div class="beneficios">
+                            <div class="beneficios__img">
+                                <img src="multimedia/img/people.svg" alt="" class="imgBeneficios">
+                            </div>
+                            <div class="beneficios__p">
+                                <p>Acceso a una comunidad de alumnos y profesores según tus intereses (Posibilidades de
+                                    networking)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedorDots beneficio2" data-aos="fade-down-left">
+                        <div class="dots1"></div>
+                        <div class="beneficios">
+                            <div class="beneficios__img">
+                                <img src="multimedia/img/app.svg" alt="" class="imgBeneficios">
+                            </div>
+                            <div class="beneficios__p">
+                                <p>App privada para estudiantes de SagaIdiomas. Para monitorear y reforzar tu
+                                    conocimiento
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedorDots beneficio3" data-aos="fade-down-right">
+                        <div class="dots2"></div>
+                        <div class="beneficios">
+                            <div class="beneficios__img">
+                                <img src="multimedia/img/books.svg" alt="" class="imgBeneficios">
+                            </div>
+                            <div class="beneficios__p">
+                                <p>Libros, podcast y recursos exclusivos con técnicas para aumentar vocabulario y
+                                    dominio
+                                    del
+                                    idiomas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedorDots beneficio4" data-aos="fade-down-left">
+                        <div class="dots1"></div>
+                        <div class="beneficios">
+                            <div class="beneficios__img">
+                                <img src="multimedia/img/descuento.svg" alt="" class="imgBeneficios">
+                            </div>
+                            <div class="beneficios__p">
+                                <p>Descuentos especiales para familiares y amigos + programa de referidos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedorDots beneficio5" data-aos="fade-down-right">
+                        <div class="dots2"></div>
+                        <div class="beneficios">
+                            <div class="beneficios__img">
+                                <img src="multimedia/img/class.svg" alt="" class="imgBeneficios">
+                            </div>
+                            <div class="beneficios__p">
+                                <p>Clases particulares bisemanales para evaluar tu avance y tus áreas a reforzar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="separador">
+                <img src="multimedia/img/wave2.svg" alt="separador de seccion">
+            </div>
+        </section>
+        <!-- final seccion beneficios -->
+
         <!-- Comienzo catálogo de idiomas -->
         <section class="catalogoIdiomas">
             <div class="waveIdiomas">
@@ -104,32 +180,32 @@
                             <h2>Nuestros Idiomas</h2>
                         </div>
 
-                        <div class="idiomas idioma1">
+                        <div class="idiomas idioma1" data-aos="fade-up-right">
                             <div class="boxshadow"></div>
                             <img src="multimedia/img/uk-flag.svg" alt="Bandera de Reino Unido" class="bandera">
                             <p>Inglés</p>
                         </div>
-                        <div class="idiomas idioma2">
+                        <div class="idiomas idioma2" data-aos="fade-up-right">
                             <div class="boxshadow"></div>
                             <img src="multimedia/img/francia-flag.svg" alt="Bandera de Francia" class="bandera">
                             <p>Francés</p>
                         </div>
-                        <div class="idiomas idioma3">
+                        <div class="idiomas idioma3" data-aos="fade-up-right">
                             <div class="boxshadow"></div>
                             <img src="multimedia/img/brasil-flag.svg" alt="Bandera de Brasil" class="bandera">
                             <p>Portugués</p>
                         </div>
-                        <div class="idiomas idioma4">
+                        <div class="idiomas idioma4" data-aos="fade-up-left">
                             <div class="boxshadow"></div>
                             <img src="multimedia/img/italia-flag.svg" alt="Bandera de Italia" class="bandera">
                             <p>Italiano</p>
                         </div>
-                        <div class="idiomas idioma5">
+                        <div class="idiomas idioma5" data-aos="fade-up-left">
                             <div class="boxshadow"></div>
                             <img src="multimedia/img/alemania-flag.svg" alt="Bandera de Alemania" class="bandera">
                             <p>Alemán</p>
                         </div>
-                        <div class="idiomas idioma6">
+                        <div class="idiomas idioma6" data-aos="fade-up-left">
                             <div class="boxshadow"></div>
                             <img src="multimedia/img/japon-flag.svg" alt="Bandera de Japón" class="bandera">
                             <p>Japonés</p>
@@ -147,69 +223,82 @@
                     <div class="planes__h2">
                         <h2>Conoce nuestros planes</h2>
                     </div>
-                    <div class="card planes1">
-                        <div class=" planes">
-                            <div class="planes__img planesImg1">
-                                <img src="multimedia/img/mujer-sofa.svg"
-                                    alt="mujer en sentada en sofa con una taza de cafe y usando el celular">
-                            </div>
-                            <div class="planes__h3">
-                                <h3>Plan Chill</h3>
-                            </div>
-                            <div class="planes__p">
-                                <p>Un curso temático del idioma que desees</p>
-                            </div>
-                            <div class="planes__btn">
-                                <a href="paginas/planes.html" class="btnPrimario btnPlanes btnNegativo">Ver detalle</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card planes2">
-                        <div class="planes">
-                            <div class="planes__img planesImg2">
-                                <img src="multimedia/img/hombre-laptop.svg" alt="Hombre sentado usando una laptop">
-                            </div>
-                            <div class="planes__h3">
-                                <h3>Plan Intense</h3>
-                            </div>
-                            <div class="planes__p">
-                                <p>Dos cursos temáticos (Pueden ser de dos idiomas diferentes)</p>
-                            </div>
-                            <div class="planes__btn">
-                                <a href="paginas/planes.html" class="btnPrimario btnPlanes btnNegativo">Ver detalle</a>
+                    <div class="animacion" data-aos="zoom-out-up">
+                        <div class="card planes1">
+                            <div class=" planes">
+                                <div class="planes__img planesImg1">
+                                    <img src="multimedia/img/mujer-sofa.svg"
+                                        alt="mujer en sentada en sofa con una taza de cafe y usando el celular">
+                                </div>
+                                <div class="planes__h3">
+                                    <h3>Plan Chill</h3>
+                                </div>
+                                <div class="planes__p">
+                                    <p>Un curso temático del idioma que desees</p>
+                                </div>
+                                <div class="planes__btn">
+                                    <a href="paginas/planes.html" class="btnPrimario btnPlanes btnNegativo">Ver
+                                        detalle</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card planes3">
-                        <div class="planes">
-                            <div class="planes__img planesImg3">
-                                <img src="multimedia/img/hombre-certificado.svg"
-                                    alt="Persona sosteniendo un certificado">
-                            </div>
-                            <div class="planes__h3">
-                                <h3>Plan Full</h3>
-                            </div>
-                            <div class="planes__p">
-                                <p>Accede a todos los cursos del idioma que elijas</p>
-                            </div>
-                            <div class="planes__btn">
-                                <a href="paginas/planes.html" class="btnPrimario btnPlanes btnNegativo">Ver detalle</a>
+                    <div class="animacion" data-aos="zoom-out-up">
+                        <div class="card planes2">
+                            <div class="planes">
+                                <div class="planes__img planesImg2">
+                                    <img src="multimedia/img/hombre-laptop.svg" alt="Hombre sentado usando una laptop">
+                                </div>
+                                <div class="planes__h3">
+                                    <h3>Plan Intense</h3>
+                                </div>
+                                <div class="planes__p">
+                                    <p>Dos cursos temáticos (Pueden ser de dos idiomas diferentes)</p>
+                                </div>
+                                <div class="planes__btn">
+                                    <a href="paginas/planes.html" class="btnPrimario btnPlanes btnNegativo">Ver
+                                        detalle</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card planes4">
-                        <div class="planes">
-                            <div class="planes__img planesImg4">
-                                <img src="multimedia/img/pareja-sharing.svg" alt="pareja compartiendo un certificado">
+                    <div class="animacion" data-aos="zoom-out-up">
+                        <div class="card planes3">
+                            <div class="planes">
+                                <div class="planes__img planesImg3">
+                                    <img src="multimedia/img/hombre-certificado.svg"
+                                        alt="Persona sosteniendo un certificado">
+                                </div>
+                                <div class="planes__h3">
+                                    <h3>Plan Full</h3>
+                                </div>
+                                <div class="planes__p">
+                                    <p>Accede a todos los cursos del idioma que elijas</p>
+                                </div>
+                                <div class="planes__btn">
+                                    <a href="paginas/planes.html" class="btnPrimario btnPlanes btnNegativo">Ver
+                                        detalle</a>
+                                </div>
                             </div>
-                            <div class="planes__h3">
-                                <h3>Plan Shared</h3>
-                            </div>
-                            <div class="planes__p">
-                                <p>Compra un curso y regala otro a quien tu quieras</p>
-                            </div>
-                            <div class="planes__btn">
-                                <a href="paginas/planes.html" class="btnPrimario btnPlanes btnNegativo">Ver detalle</a>
+                        </div>
+                    </div>
+                    <div class="animacion" data-aos="zoom-out-up">
+                        <div class="card planes4">
+                            <div class="planes">
+                                <div class="planes__img planesImg4">
+                                    <img src="multimedia/img/pareja-sharing.svg"
+                                        alt="pareja compartiendo un certificado">
+                                </div>
+                                <div class="planes__h3">
+                                    <h3>Plan Shared</h3>
+                                </div>
+                                <div class="planes__p">
+                                    <p>Compra un curso y regala otro a quien tu quieras</p>
+                                </div>
+                                <div class="planes__btn">
+                                    <a href="paginas/planes.html" class="btnPrimario btnPlanes btnNegativo">Ver
+                                        detalle</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -231,50 +320,56 @@
                     <div class="imgServicios" data-aos="fade-up-right">
                         <img src="multimedia/img/contact-us-animate.svg" alt="Mujer con laptop">
                     </div>
-                    <div class="servicios servicios1">
-                        <div class="serviciosImg">
-                            <img src="multimedia/img/microfono.svg" alt="microfono" class="cardImg">
-                        </div>
-                        <div class="servicios__texto">
-                            <div class="servicios__h3">
-                                <h3>
-                                    Locución y Doblaje
-                                </h3>
+                    <div class="animacion" data-aos="zoom-out-left">
+                        <div class="servicios servicios1">
+                            <div class="serviciosImg">
+                                <img src="multimedia/img/microfono.svg" alt="microfono" class="cardImg">
                             </div>
-                            <div class="servicios__btn">
-                                <a href="paginas/servicios.html" class="btnServicios btnPrimario">Ver detalle</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="servicios servicios2">
-                        <div class="serviciosImg">
-                            <img src="multimedia/img/translate.svg" alt="icono de traducccion" class="cardImg">
-                        </div>
-                        <div class="servicios__texto">
-                            <div class="servicios__h3">
-                                <h3>
-                                    Traducción/ Transcripción
-                                </h3>
-                            </div>
-                            <div class="servicios__btn">
-                                <a href="paginas/servicios.html" class="btnServicios btnPrimario">Ver
-                                    detalle</a>
+                            <div class="servicios__texto">
+                                <div class="servicios__h3">
+                                    <h3>
+                                        Locución y Doblaje
+                                    </h3>
+                                </div>
+                                <div class="servicios__btn">
+                                    <a href="paginas/servicios.html" class="btnServicios btnPrimario">Ver detalle</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="servicios servicios3">
-                        <div class="serviciosImg">
-                            <img src="multimedia/img/subtitles.svg" alt="icono de subtitulos" class="cardImg">
-                        </div>
-                        <div class="servicios__texto">
-                            <div class="servicios__h3">
-                                <h3>
-                                    Subtitulado
-                                </h3>
+                    <div class="animacion" data-aos="zoom-out-left">
+                        <div class="servicios servicios2">
+                            <div class="serviciosImg">
+                                <img src="multimedia/img/translate.svg" alt="icono de traducccion" class="cardImg">
                             </div>
-                            <div class="servicios__btn">
-                                <a href="paginas/servicios.html" class="btnServicios btnPrimario">Ver
-                                    detalle</a>
+                            <div class="servicios__texto">
+                                <div class="servicios__h3">
+                                    <h3>
+                                        Traducción/ Transcripción
+                                    </h3>
+                                </div>
+                                <div class="servicios__btn">
+                                    <a href="paginas/servicios.html" class="btnServicios btnPrimario">Ver
+                                        detalle</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="animacion" data-aos="zoom-out-left">
+                        <div class="servicios servicios3">
+                            <div class="serviciosImg">
+                                <img src="multimedia/img/subtitles.svg" alt="icono de subtitulos" class="cardImg">
+                            </div>
+                            <div class="servicios__texto">
+                                <div class="servicios__h3">
+                                    <h3>
+                                        Subtitulado
+                                    </h3>
+                                </div>
+                                <div class="servicios__btn">
+                                    <a href="paginas/servicios.html" class="btnServicios btnPrimario">Ver
+                                        detalle</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -304,6 +399,9 @@
             <span>&copy; 2022 | SaĝaIdiomas</span>
         </div>
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
