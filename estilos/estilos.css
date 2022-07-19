@@ -7,8 +7,11 @@
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
-
+body {
+    overflow: hidden;
+}
 
 /* ESTILOS GENERALES DEL SITIO */
 
@@ -339,6 +342,7 @@ footer {
 /* Fin estilos efecto wave */
 
 /* Comienzo estilos seccion presentacion */
+
 
 
 .contenedor__presentacion {
