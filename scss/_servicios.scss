@@ -1,0 +1,41 @@
+@import "maps";
+@import "variables";
+@import "mixin";
+@import "index";
+
+.section__catalogoServicios {
+    padding-bottom: 40px;
+}
+
+.contenedorTextoServicios {
+
+    h1 {
+        font-size: 50px;
+        color: #EFF3F5;
+        text-align: center;
+        padding: 80px 0px 20px 0px;
+    }
+    h2 {
+        font-size: 30px;
+        color: #EFF3F5;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+}
+
+.tajetas__grid__layout {
+    @include grid__layout;
+}
+
+.tarjeta__servicios {
+    @extend .tarjeta;
+    .tarjeta__p__servicios {
+        display: flex;
+        align-items: center;
+        height: 200px;
+        font-size: 20px;
+        padding: 10px;
+        margin-bottom: 30px;
+        
+    }
+}

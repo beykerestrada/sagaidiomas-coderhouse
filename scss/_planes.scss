@@ -1,0 +1,55 @@
+@import "maps";
+@import "variables";
+@import "mixin";
+@import "index";
+
+
+
+.contenedorTextoPlanes {
+    padding: 40px;
+
+    div {
+        h1 {
+            font-size: 50px;
+            color: #EFF3F5;
+            text-align: center;
+            padding: 40px 0px 20px 0px;
+        }
+        h2 {
+            font-size: 30px;
+            color: #EFF3F5;
+            text-align: center;
+        }
+    }
+
+}
+
+.tarjetas__grid__layout {
+    @include grid__layout;
+}
+
+.tarjeta__planes {
+    @extend .tarjeta;
+    .tarjeta__p__planes {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        padding: 10px;
+        margin: 30px 0px 0px 0px;
+    }
+    .precio {
+        height: 60px;
+        margin: 30px 0px;
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        span {
+            color: rgb(189, 67, 67);
+        }
+    }
+    
+}
+
+.contenedorDatosContacto {
+    background-color: transparent;
+}

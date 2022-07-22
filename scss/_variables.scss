@@ -1,5 +1,5 @@
 @import "maps";
-
+@import "mixin";
 /* Se crea la variable btnPrimario, para usar el extend, segun lo pide el desafio */
 
 .btnPrimario {
@@ -65,3 +65,61 @@
     }
 }
 
+.background__gradient {
+    background: rgb(63, 163, 156);
+    background: linear-gradient(0deg, rgba(63, 163, 156, 1) 0%, rgba(42, 129, 123, 1) 100%);
+}
+
+.contenedorDatosContacto {
+    padding: 20px 0px 100px 0px;
+    h2 {
+        font-size: 50px;
+        color: #EFF3F5;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    p {
+        font-size: 20px;
+        color: #EFF3F5;
+        text-align: center;
+        a {
+            color: #EFF3F5;
+        }
+    }
+    background-color: transparent;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 16px;
+    font-size: 18px;
+    @include bg-card;
+
+    &:hover {
+        transform: translateY(-10px) scale(1.03);
+    }
+
+    .tarjeta__titulo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #292f36;
+        background-color: rgba(239, 243, 245, 0.822);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 150px;
+        border-radius: 16px;
+    }
+    .tarjeta__p {
+        color: #000;
+        font-size: 18px;
+        padding: 20px 10px;
+        height: 80px;
+        margin-bottom: 30px;
+        line-height: 2.5rem;
+    }
+}
