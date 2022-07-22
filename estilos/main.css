@@ -5651,7 +5651,7 @@ footer {
           .contenedorForm .positionForm .contenedorFormSection .formBotones .btnForm:hover {
             box-shadow: -3px 4px 14px 0px rgba(0, 0, 0, 0.63);
             transition: 0.3s;
-            color: #EFF3F5; }
+            color: #292f36; }
           .contenedorForm .positionForm .contenedorFormSection .formBotones .btnForm:active {
             box-shadow: inset 0.5px 0.5px 5px 0px rgba(0, 0, 0, 0.63); }
       .contenedorForm .positionForm .contenedorFormSection .form__section {
