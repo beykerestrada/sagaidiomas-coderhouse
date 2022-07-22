@@ -7,11 +7,8 @@
 
 html {
     font-size: 62.5%;
-    overflow-x: hidden;
 }
-body {
-    overflow: hidden;
-}
+
 
 /* ESTILOS GENERALES DEL SITIO */
 
@@ -50,10 +47,13 @@ ancho máxino */
 /* Fin estilos menu social */
 
 /* Comienzo estilos cabecera */
+
+
+
 header {
     background-color: #2F7DC2;
     position: sticky;
-    top: -1px;
+    top: 0px;
     z-index: 5000;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
 }
@@ -269,7 +269,7 @@ footer {
 
 
 .presentacion {
-    overflow: hidden;
+    overflow-x: hidden;
     height: 800px;
     background-color: #eff3f5;
     position: relative;
@@ -288,7 +288,9 @@ footer {
     background: linear-gradient(0deg, #389FF6 10%, #2F7DC2 80%);
 
 }
-
+.principal {
+    overflow-x: hidden;
+}
 .wave {
     width: 6000px;
     height: 198px;

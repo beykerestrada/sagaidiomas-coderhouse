@@ -1,0 +1,11 @@
+/* Aqui están los mixins para el desafio */
+
+/* Este mixing lo incluí en las tarjetas de cada sección */
+@mixin bg-card {
+        background: rgba(255, 255, 255, 0.1);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 16px;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        transition: all .3s;
+}

@@ -1,0 +1,20 @@
+/* SE USA ESTE MAPA PARA MODIFICAR LOS COLORES, NO SOLO DEL 
+BACKGROUND, PERO TAMBIEN DE ALGUNOS ELEMENTOS. BASICAMENTE
+ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
+
+$background: (
+    blue: #2F7DC2,
+    green: #3fa39c,
+    black: #292f36,
+    yellow: #f9c10d,
+    gray: #eff3f5,
+    
+);
+
+@each $fondo, $color in $background {
+    .bg-#{$fondo}{
+        background: $color;
+    }
+}
+
+
