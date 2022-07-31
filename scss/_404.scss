@@ -1,0 +1,52 @@
+@import "maps";
+@import "variables";
+@import "mixin";
+@import "index";
+
+.contenedorTexto404 {
+    background: rgb(63, 163, 156);
+    background: linear-gradient(0deg, rgba(63, 163, 156, 1) 0%, rgba(42, 129, 123, 1) 100%);
+    @extend .contenedorTextoPaginas;
+
+    .contenedorflex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        .img404 {
+            display: inline-block;
+            display: grid;
+            place-items: center;
+
+            img {
+                width: 50%;
+                min-width: 250px;
+            }
+        }
+
+        .texto404 {
+            display: inline-block;
+
+            h2 {
+                font-size: 40px;
+                @media screen and (max-width: 800px) {
+                    font-size: 30px;
+                    text-align: center;
+                }
+            }
+
+            h3 {
+                font-size: 20px;
+                text-align: center;
+                color: #eff3f5;
+                @media screen and (max-width: 410px) {
+                    font-size: 16px;
+                    text-align: center;
+                }
+                a {
+                    color: #f9c10d;
+                }
+            }
+        }
+    }
+}
