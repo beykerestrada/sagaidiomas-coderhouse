@@ -39,7 +39,7 @@ ancho máxino */
 
             a {
                 font-size: 2rem;
-                color: #292f36;
+                color: #eaeaea;
                 padding: 8px;
             }
         }
@@ -206,39 +206,6 @@ header {
 /* Fin estilos cabecera */
 
 
-/* Estilos footer */
-footer {
-    background-color: transparent;
-    background-image: url(../multimedia/img/background-footer.svg);
-    background-size: cover;
-    overflow: hidden;
-    padding-top: 150px;
-    background-color: map-get($background, green);
-    margin-top: -1px;
-
-    .menuSocial__footer {
-        background-color: transparent;
-    }
-
-    .lineaFooter {
-        height: 50px;
-        padding-bottom: 60px;
-        border-bottom: 1px solid #292f36;
-    }
-
-    .copyright {
-        padding: 10px 0px 40px 0px;
-        height: 80px;
-        text-align: center;
-
-        span {
-            font-size: 2rem;
-            color: #292f36;
-        }
-    }
-}
-
-/* Fin estilos footer */
 
 /* FIN ESTILOS GENERALES DEL SITIO */
 

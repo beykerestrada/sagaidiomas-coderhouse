@@ -68,7 +68,7 @@
     display: block;
     border-radius: 16px;
     text-align: center;
-    
+
 }
 
 .btnNegativo {
@@ -144,7 +144,7 @@
     justify-content: space-between;
     padding: 5%;
     border-radius: 16px;
-    font-size: 1.8rem;
+    font-size: 2rem;
     @include bg-card;
 
     &:hover {
@@ -168,7 +168,7 @@
 
     .tarjeta__p {
         color: #000;
-        font-size: 18px;
+        font-size: 20px;
         padding: 20px 0px;
         height: 80px;
         margin-bottom: 30px;
@@ -177,6 +177,209 @@
 }
 
 .textoDestacado {
-    /* color: rgba(249, 194, 13, 0.891); */
     font-weight: bolder;
 }
+
+#checkMovil {
+    display: none;
+
+    &:checked {
+        ~.contenedor__menuSocialMovil {
+            right: 0px;
+        }
+    }
+}
+
+
+/* Estilos menu social version movil.
+Es una pestaña flotante, la cual, al haceer clic en "siguenos"
+despliega las redes sociales y si se ace clic de nuevo, las esconde*/
+
+.contenedor__menuSocialMovil {
+    display: none;
+
+    @media screen and (max-width: 480px) {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        height: 200px;
+        top: 30%;
+        right: -45px;
+        transition: all .5s;
+
+        .menuSocial__ul {
+            height: 250px;
+            background-color: #eff3f5;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-content: flex-start;
+            border-bottom-left-radius: 16px;
+            border-top-left-radius: 16px;
+
+            li {
+                display: inline-block;
+                font-size: 20px;
+                text-decoration: none;
+                list-style-type: none;
+                padding: 20px 10px;
+
+                a {
+                    color: #292f36;
+                }
+            }
+        }
+
+        .textoMenu {
+            display: flex;
+            width: 40px;
+            height: 250px;
+            align-items: center;
+
+            .contenedorTextoMenu {
+                height: 100%;
+                width: 100%;
+                position: relative;
+
+                .menuSocialMovil__btn {
+                    position: absolute;
+                    top: 45%;
+                    left: -50px;
+                    width: 150px;
+                    height: 30px;
+                    text-align: center;
+                    transform: rotateZ(-90deg);
+                    border-top-right-radius: 16px;
+                    border-top-left-radius: 16px;
+                    background: rgba(255, 255, 255, 0.3);
+                    border-right: 1px solid rgba(255, 255, 255, 0.5);
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                    box-shadow: -20px 20px 50px rgba(0, 0, 0, 0.5);
+                    transition: all .3s;
+
+                    span {
+                        font-size: 20px;
+                        color: #292f36;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+/* Fin estilos menu social movil */
+
+/* Estilos footer */
+footer {
+    background-color: transparent;
+    background-image: url(../multimedia/img/background-footer.svg);
+    background-size: cover;
+    overflow: hidden;
+    padding-top: 150px;
+    background-color: map-get($background, green);
+    margin-top: -1px;
+
+    .gridFooter {
+        @include grid__layout;
+        justify-items: left;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        padding-bottom: 0px;
+        column-gap: 20px;
+        row-gap: 20px;
+        font-size: 18px;
+
+        h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #3fa39c;
+        }
+
+        ul {
+            li {
+                list-style-type: none;
+                margin-bottom: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: #6b6c6d;
+                }
+            }
+        }
+    }
+
+
+    .menuSocial__footer {
+        background-color: transparent;
+        height: 50px;
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
+        ul {
+            padding: 0;
+            text-align: right;
+
+            li {
+                display: inline-block;
+
+                a {
+                    font-size: 2rem;
+                    color: #6b6c6d;
+                    padding: 8px;
+                }
+            }
+        }
+
+    }
+
+    .lineaFooter {
+        height: 50px;
+        padding-bottom: 60px;
+        border-bottom: 1px solid #292f36;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0px 80px 0px;
+        height: 40px;
+        @media screen and (max-width: 480px) {
+            display: block;
+            text-align: center;
+        }
+
+        span {
+            font-size: 2rem;
+            color: #6b6c6d;
+
+            span {
+                color: rgb(189, 67, 67);
+            }
+        }
+    }
+
+    .autor {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        div {
+            height: 50px;
+            text-align: center;
+            font-size: 12px;
+            color: #6b6c6d;
+
+            a {
+                color: #6b6c6d;
+            }
+        }
+    }
+}
+
+/* Fin estilos footer */
+
+/* Estilos boton ir arriba */
+
+
+
+/* Estilos boton ir arriba */
