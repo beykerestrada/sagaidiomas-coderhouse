@@ -9,22 +9,12 @@
 }
 
 .titulosSeccion {
-    h1 {
-        font-size: 50px;
-        text-align: center;
-        padding-top: 80px;
-    }
-
-    h2 {
-        font-size: 40px;
-        padding-bottom: 80px;
-        text-align: center;
-    }
+    @extend .contenedorTextoPaginas;
 }
 
 .contenedorForm {
     background-color: #EFF3F5;
-    padding: 60px;
+    padding: 5%;
     color: #292f36;
     border-radius: 16px;
     box-shadow: -3px 4px 14px 0px rgba(0, 0, 0, 0.63);
@@ -38,7 +28,6 @@
         "mapa mapa mapa mapa mapa";
 
     @media screen and (max-width: 975px) {
-        column-gap: 20px;
         row-gap: 40px;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;

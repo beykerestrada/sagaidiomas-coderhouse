@@ -6,22 +6,7 @@
 
 
 .contenedorTextoPlanes {
-    padding: 40px;
-
-    div {
-        h1 {
-            font-size: 50px;
-            color: #EFF3F5;
-            text-align: center;
-            padding: 40px 0px 20px 0px;
-        }
-        h2 {
-            font-size: 30px;
-            color: #EFF3F5;
-            text-align: center;
-        }
-    }
-
+    @extend .contenedorTextoPaginas;
 }
 
 .tarjetas__grid__layout {
@@ -34,7 +19,6 @@
         display: flex;
         align-items: center;
         font-size: 20px;
-        padding: 10px;
         margin: 30px 0px 0px 0px;
     }
     .precio {
@@ -48,8 +32,4 @@
         }
     }
     
-}
-
-.contenedorDatosContacto {
-    background-color: transparent;
 }

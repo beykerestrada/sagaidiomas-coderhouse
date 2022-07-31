@@ -20,6 +20,26 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
 /* Aqui están los mixins para el desafio */
 /* Este mixing lo incluí en las tarjetas de cada sección */
 /* Se crea la variable btnPrimario, para usar el extend, segun lo pide el desafio */
+.contenedorTextoPaginas h1, .contenedorTextoPlanes h1, .contenedorTextoServicios h1, .titulosSeccion h1 {
+  font-size: 5rem;
+  color: #EFF3F5;
+  text-align: center;
+  padding: 80px 0px 20px 0px; }
+  @media screen and (max-width: 640px) {
+    .contenedorTextoPaginas h1, .contenedorTextoPlanes h1, .contenedorTextoServicios h1, .titulosSeccion h1 {
+      text-align: left;
+      font-size: 4rem; } }
+
+.contenedorTextoPaginas h2, .contenedorTextoPlanes h2, .contenedorTextoServicios h2, .titulosSeccion h2 {
+  font-size: 3rem;
+  color: #EFF3F5;
+  text-align: center;
+  padding-bottom: 40px; }
+  @media screen and (max-width: 640px) {
+    .contenedorTextoPaginas h2, .contenedorTextoPlanes h2, .contenedorTextoServicios h2, .titulosSeccion h2 {
+      text-align: left;
+      font-size: 3rem; } }
+
 .btnPrimario, .btnMain, .btnPlanes, .btnNegativo, .btnServicios {
   color: #292f36;
   font-size: 20px;
@@ -70,27 +90,36 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
   background: linear-gradient(0deg, #3fa39c 0%, #2a817b 100%); }
 
 .contenedorDatosContacto {
-  padding: 20px 0px 100px 0px;
+  padding: 20px 2.5% 100px 2.5%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: transparent; }
-  .contenedorDatosContacto h2 {
+  .contenedorDatosContacto .datosContacto__h2 h2 {
     font-size: 50px;
     color: #EFF3F5;
     text-align: center;
     padding-bottom: 40px; }
-  .contenedorDatosContacto p {
+  .contenedorDatosContacto .datosContacto__p p {
     font-size: 20px;
     color: #EFF3F5;
     text-align: center; }
-    .contenedorDatosContacto p a {
+    .contenedorDatosContacto .datosContacto__p p a {
       color: #EFF3F5; }
+    @media screen and (max-width: 840px) {
+      .contenedorDatosContacto .datosContacto__p p {
+        text-align: left; } }
 
 .tarjeta, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos, .tarjeta__planes, .tarjeta__servicios {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
+  padding: 5%;
   border-radius: 16px;
-  font-size: 18px;
+  font-size: 1.8rem;
   background: rgba(255, 255, 255, 0.1);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -105,18 +134,22 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
     justify-content: center;
     border: 2px solid #292f36;
     background-color: rgba(239, 243, 245, 0.822);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 150px;
+    min-height: 150px;
     border-radius: 16px; }
+    .tarjeta .tarjeta__titulo h3, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__titulo h3, .tarjeta__planes .tarjeta__titulo h3, .tarjeta__servicios .tarjeta__titulo h3 {
+      text-align: center;
+      text-transform: uppercase; }
   .tarjeta .tarjeta__p, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__p, .tarjeta__planes .tarjeta__p, .tarjeta__servicios .tarjeta__p {
     color: #000;
     font-size: 18px;
-    padding: 20px 10px;
+    padding: 20px 0px;
     height: 80px;
     margin-bottom: 30px;
     line-height: 2.5rem; }
+
+.textoDestacado {
+  /* color: rgba(249, 194, 13, 0.891); */
+  font-weight: bolder; }
 
 /* SE USA ESTE MAPA PARA MODIFICAR LOS COLORES, NO SOLO DEL 
 BACKGROUND, PERO TAMBIEN DE ALGUNOS ELEMENTOS. BASICAMENTE
@@ -157,6 +190,26 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
 /* Aqui están los mixins para el desafio */
 /* Este mixing lo incluí en las tarjetas de cada sección */
 /* Se crea la variable btnPrimario, para usar el extend, segun lo pide el desafio */
+.contenedorTextoPaginas h1, .contenedorTextoPlanes h1, .contenedorTextoServicios h1, .titulosSeccion h1 {
+  font-size: 5rem;
+  color: #EFF3F5;
+  text-align: center;
+  padding: 80px 0px 20px 0px; }
+  @media screen and (max-width: 640px) {
+    .contenedorTextoPaginas h1, .contenedorTextoPlanes h1, .contenedorTextoServicios h1, .titulosSeccion h1 {
+      text-align: left;
+      font-size: 4rem; } }
+
+.contenedorTextoPaginas h2, .contenedorTextoPlanes h2, .contenedorTextoServicios h2, .titulosSeccion h2 {
+  font-size: 3rem;
+  color: #EFF3F5;
+  text-align: center;
+  padding-bottom: 40px; }
+  @media screen and (max-width: 640px) {
+    .contenedorTextoPaginas h2, .contenedorTextoPlanes h2, .contenedorTextoServicios h2, .titulosSeccion h2 {
+      text-align: left;
+      font-size: 3rem; } }
+
 .btnPrimario, .btnMain, .btnPlanes, .btnNegativo, .btnServicios {
   color: #292f36;
   font-size: 20px;
@@ -207,27 +260,36 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
   background: linear-gradient(0deg, #3fa39c 0%, #2a817b 100%); }
 
 .contenedorDatosContacto {
-  padding: 20px 0px 100px 0px;
+  padding: 20px 2.5% 100px 2.5%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: transparent; }
-  .contenedorDatosContacto h2 {
+  .contenedorDatosContacto .datosContacto__h2 h2 {
     font-size: 50px;
     color: #EFF3F5;
     text-align: center;
     padding-bottom: 40px; }
-  .contenedorDatosContacto p {
+  .contenedorDatosContacto .datosContacto__p p {
     font-size: 20px;
     color: #EFF3F5;
     text-align: center; }
-    .contenedorDatosContacto p a {
+    .contenedorDatosContacto .datosContacto__p p a {
       color: #EFF3F5; }
+    @media screen and (max-width: 840px) {
+      .contenedorDatosContacto .datosContacto__p p {
+        text-align: left; } }
 
 .tarjeta, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos, .tarjeta__planes, .tarjeta__servicios {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
+  padding: 5%;
   border-radius: 16px;
-  font-size: 18px;
+  font-size: 1.8rem;
   background: rgba(255, 255, 255, 0.1);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -242,18 +304,22 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
     justify-content: center;
     border: 2px solid #292f36;
     background-color: rgba(239, 243, 245, 0.822);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 150px;
+    min-height: 150px;
     border-radius: 16px; }
+    .tarjeta .tarjeta__titulo h3, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__titulo h3, .tarjeta__planes .tarjeta__titulo h3, .tarjeta__servicios .tarjeta__titulo h3 {
+      text-align: center;
+      text-transform: uppercase; }
   .tarjeta .tarjeta__p, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__p, .tarjeta__planes .tarjeta__p, .tarjeta__servicios .tarjeta__p {
     color: #000;
     font-size: 18px;
-    padding: 20px 10px;
+    padding: 20px 0px;
     height: 80px;
     margin-bottom: 30px;
     line-height: 2.5rem; }
+
+.textoDestacado {
+  /* color: rgba(249, 194, 13, 0.891); */
+  font-weight: bolder; }
 
 /* Aqui están los mixins para el desafio */
 /* Este mixing lo incluí en las tarjetas de cada sección */
@@ -285,7 +351,7 @@ ancho máxino */
     .menuSocial ul li {
       display: inline-block; }
       .menuSocial ul li a {
-        font-size: 20px;
+        font-size: 2rem;
         color: #292f36;
         padding: 8px; }
   @media screen and (max-width: 850px) {
@@ -315,13 +381,13 @@ header {
       header .contenedor__header .contenedor__logo a {
         text-decoration: none; }
         header .contenedor__header .contenedor__logo a .logo {
-          font-size: 40px;
+          font-size: 4rem;
           font-weight: 700;
           color: #2F7DC2;
           background-color: #fff; }
         header .contenedor__header .contenedor__logo a .logo1 {
           margin: 0;
-          font-size: 40px;
+          font-size: 4rem;
           font-weight: 700;
           color: #fff; }
     header .contenedor__header .contenedor__menu {
@@ -342,7 +408,7 @@ header {
               top: 79px;
               left: 0%; } }
         header .contenedor__header .contenedor__menu nav .checkBtn {
-          font-size: 30px;
+          font-size: 3rem;
           color: #fff;
           float: right;
           cursor: pointer;
@@ -374,13 +440,13 @@ header {
               box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3); } }
           header .contenedor__header .contenedor__menu nav ul li a {
             text-decoration: none;
-            font-size: 20px;
+            font-size: 2rem;
             color: #fff;
             padding: 0px;
             text-align: right; }
             @media screen and (max-width: 850px) {
               header .contenedor__header .contenedor__menu nav ul li a {
-                font-size: 30px;
+                font-size: 3rem;
                 width: 80px; }
                 header .contenedor__header .contenedor__menu nav ul li a:hover {
                   color: #f9c10d; } }
@@ -413,7 +479,7 @@ footer {
   background-color: #3fa39c;
   margin-top: -1px; }
   footer .menuSocial__footer {
-    background-color: #EFF3F5; }
+    background-color: transparent; }
   footer .lineaFooter {
     height: 50px;
     padding-bottom: 60px;
@@ -423,7 +489,7 @@ footer {
     height: 80px;
     text-align: center; }
     footer .copyright span {
-      font-size: 20px;
+      font-size: 2rem;
       color: #292f36; }
 
 /* Fin estilos footer */
@@ -499,36 +565,38 @@ footer {
   .contenedor__presentacion .presentacion__texto__h1 h1 {
     text-align: left;
     color: #292f36;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 700;
     margin: 60px 0px 20px 0px; }
     .contenedor__presentacion .presentacion__texto__h1 h1 span {
       color: #f9c10d; }
     @media screen and (max-width: 1100px) {
       .contenedor__presentacion .presentacion__texto__h1 h1 {
-        font-size: 50px; } }
+        font-size: 5rem; } }
     @media screen and (max-width: 990px) {
       .contenedor__presentacion .presentacion__texto__h1 h1 {
         text-align: center;
-        font-size: 80px; } }
+        font-size: 8rem; } }
     @media screen and (max-width: 640px) {
       .contenedor__presentacion .presentacion__texto__h1 h1 {
-        font-size: 40px; } }
+        font-size: 4rem;
+        text-align: left; } }
   .contenedor__presentacion .presentacion__texto__h2 h2 {
     color: #444;
-    font-size: 30px;
+    font-size: 3rem;
     margin-bottom: 40px; }
     @media screen and (max-width: 1100px) {
       .contenedor__presentacion .presentacion__texto__h2 h2 {
-        font-size: 40px; } }
+        font-size: 4rem; } }
     @media screen and (max-width: 990px) {
       .contenedor__presentacion .presentacion__texto__h2 h2 {
-        font-size: 35px;
+        font-size: 3.5rem;
         text-align: center;
         margin-bottom: 60px; } }
     @media screen and (max-width: 640px) {
       .contenedor__presentacion .presentacion__texto__h2 h2 {
-        font-size: 30px; } }
+        font-size: 3rem;
+        text-align: left; } }
   .contenedor__presentacion .btnMain {
     animation: scale linear 2s infinite; }
 
@@ -563,13 +631,16 @@ footer {
 .seccionBeneficios {
   overflow: hidden; }
   .seccionBeneficios h2 {
-    font-size: 50px;
+    font-size: 5rem;
     text-align: center;
     padding-bottom: 60px; }
   .seccionBeneficios p {
-    font-size: 30px;
+    font-size: 3rem;
     text-align: center;
     padding-bottom: 100px; }
+    @media screen and (max-width: 640px) {
+      .seccionBeneficios p {
+        text-align: left; } }
   .seccionBeneficios .contenedorBeneficios {
     width: 80%;
     margin: auto;
@@ -637,7 +708,7 @@ footer {
           display: inline-block; }
           .seccionBeneficios .contenedorBeneficios .contenedorDots .beneficios .beneficios__p p {
             text-align: left;
-            font-size: 20px;
+            font-size: 2rem;
             padding: 0; }
         .seccionBeneficios .contenedorBeneficios .contenedorDots .beneficios .beneficios__img {
           display: flex;
@@ -733,7 +804,7 @@ footer {
   grid-area: idioma6; }
 
 .idiomas__h2 {
-  font-size: 40px;
+  font-size: 4rem;
   text-align: center;
   color: #292f36;
   padding-bottom: 60px; }
@@ -761,7 +832,7 @@ footer {
 
 .idiomas p {
   text-align: center;
-  font-size: 25px;
+  font-size: 2.5rem;
   color: #292f36;
   font-weight: bold;
   letter-spacing: 3px; }
@@ -822,7 +893,7 @@ footer {
       grid-area: planes4; }
     .catalogoPlanes .contenedor .planes__grid .planes__h2 {
       grid-area: planes__h2;
-      font-size: 40px;
+      font-size: 4rem;
       text-align: center;
       color: #fff;
       padding-bottom: 80px; }
@@ -884,19 +955,19 @@ footer {
         transition: all .3s; }
     .card .planes .planes__h3 {
       color: #eaeaea;
-      font-size: 30px;
+      font-size: 3rem;
       font-weight: bold;
       align-self: flex-start; }
       @media screen and (max-width: 640px) {
         .card .planes .planes__h3 {
-          font-size: 40px;
+          font-size: 4rem;
           width: 450px;
           height: 50px;
           text-align: center;
           align-self: center; } }
       @media screen and (max-width: 480px) {
         .card .planes .planes__h3 {
-          font-size: 30px;
+          font-size: 3rem;
           width: 250px;
           height: 40px;
           margin-top: 10px;
@@ -904,20 +975,20 @@ footer {
           align-self: center; } }
     .card .planes .planes__p {
       color: #fff;
-      font-size: 20px;
+      font-size: 2rem;
       width: 200px;
       height: 120px;
       align-self: flex-start; }
       @media screen and (max-width: 640px) {
         .card .planes .planes__p {
-          font-size: 30px;
+          font-size: 3rem;
           height: 150px;
           width: 350px;
           text-align: center;
           align-self: center; } }
       @media screen and (max-width: 480px) {
         .card .planes .planes__p {
-          font-size: 25px;
+          font-size: 2.5rem;
           height: 80px;
           width: 250px;
           text-align: center;
@@ -957,7 +1028,7 @@ footer {
       grid-template-areas: "servicios__h2" "servicios1" "servicios2" "servicios3"; } }
     .catalogoServicios .contenedor__servicios-grid .servicios__h2 {
       grid-area: servicios__h2;
-      font-size: 40px;
+      font-size: 4rem;
       color: #292f36;
       text-align: center;
       padding-bottom: 80px; }
@@ -965,13 +1036,13 @@ footer {
         .catalogoServicios .contenedor__servicios-grid .servicios__h2 {
           width: 300px;
           padding-bottom: 20px;
-          font-size: 30px; } }
+          font-size: 3rem; } }
       @media screen and (max-width: 480px) {
         .catalogoServicios .contenedor__servicios-grid .servicios__h2 {
           width: 300px;
           padding-top: 80px;
           padding-bottom: 20px;
-          font-size: 30px; } }
+          font-size: 3rem; } }
     .catalogoServicios .contenedor__servicios-grid .imgServicios {
       grid-area: imgServicios;
       display: flex;
@@ -1056,12 +1127,12 @@ footer {
         .catalogoServicios .contenedor__servicios-grid .servicios .servicios__texto .servicios__h3 {
           color: #fff;
           height: 50px;
-          font-size: 25px;
+          font-size: 2.5rem;
           text-align: left; }
           @media screen and (max-width: 640px) {
             .catalogoServicios .contenedor__servicios-grid .servicios .servicios__texto .servicios__h3 {
               color: #fff;
-              font-size: 30px;
+              font-size: 3rem;
               text-align: center; } }
       .catalogoServicios .contenedor__servicios-grid .servicios:hover {
         transform: translateY(-10px); }
@@ -1127,6 +1198,26 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
 /* Aqui están los mixins para el desafio */
 /* Este mixing lo incluí en las tarjetas de cada sección */
 /* Se crea la variable btnPrimario, para usar el extend, segun lo pide el desafio */
+.contenedorTextoPaginas h1, .contenedorTextoPlanes h1, .contenedorTextoServicios h1, .titulosSeccion h1 {
+  font-size: 5rem;
+  color: #EFF3F5;
+  text-align: center;
+  padding: 80px 0px 20px 0px; }
+  @media screen and (max-width: 640px) {
+    .contenedorTextoPaginas h1, .contenedorTextoPlanes h1, .contenedorTextoServicios h1, .titulosSeccion h1 {
+      text-align: left;
+      font-size: 4rem; } }
+
+.contenedorTextoPaginas h2, .contenedorTextoPlanes h2, .contenedorTextoServicios h2, .titulosSeccion h2 {
+  font-size: 3rem;
+  color: #EFF3F5;
+  text-align: center;
+  padding-bottom: 40px; }
+  @media screen and (max-width: 640px) {
+    .contenedorTextoPaginas h2, .contenedorTextoPlanes h2, .contenedorTextoServicios h2, .titulosSeccion h2 {
+      text-align: left;
+      font-size: 3rem; } }
+
 .btnPrimario, .btnMain, .btnPlanes, .btnNegativo, .btnServicios {
   color: #292f36;
   font-size: 20px;
@@ -1177,27 +1268,36 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
   background: linear-gradient(0deg, #3fa39c 0%, #2a817b 100%); }
 
 .contenedorDatosContacto {
-  padding: 20px 0px 100px 0px;
+  padding: 20px 2.5% 100px 2.5%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: transparent; }
-  .contenedorDatosContacto h2 {
+  .contenedorDatosContacto .datosContacto__h2 h2 {
     font-size: 50px;
     color: #EFF3F5;
     text-align: center;
     padding-bottom: 40px; }
-  .contenedorDatosContacto p {
+  .contenedorDatosContacto .datosContacto__p p {
     font-size: 20px;
     color: #EFF3F5;
     text-align: center; }
-    .contenedorDatosContacto p a {
+    .contenedorDatosContacto .datosContacto__p p a {
       color: #EFF3F5; }
+    @media screen and (max-width: 840px) {
+      .contenedorDatosContacto .datosContacto__p p {
+        text-align: left; } }
 
 .tarjeta, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos, .tarjeta__planes, .tarjeta__servicios {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
+  padding: 5%;
   border-radius: 16px;
-  font-size: 18px;
+  font-size: 1.8rem;
   background: rgba(255, 255, 255, 0.1);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -1212,18 +1312,22 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
     justify-content: center;
     border: 2px solid #292f36;
     background-color: rgba(239, 243, 245, 0.822);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 150px;
+    min-height: 150px;
     border-radius: 16px; }
+    .tarjeta .tarjeta__titulo h3, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__titulo h3, .tarjeta__planes .tarjeta__titulo h3, .tarjeta__servicios .tarjeta__titulo h3 {
+      text-align: center;
+      text-transform: uppercase; }
   .tarjeta .tarjeta__p, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__p, .tarjeta__planes .tarjeta__p, .tarjeta__servicios .tarjeta__p {
     color: #000;
     font-size: 18px;
-    padding: 20px 10px;
+    padding: 20px 0px;
     height: 80px;
     margin-bottom: 30px;
     line-height: 2.5rem; }
+
+.textoDestacado {
+  /* color: rgba(249, 194, 13, 0.891); */
+  font-weight: bolder; }
 
 /* Aqui están los mixins para el desafio */
 /* Este mixing lo incluí en las tarjetas de cada sección */
@@ -1266,6 +1370,26 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
 /* Aqui están los mixins para el desafio */
 /* Este mixing lo incluí en las tarjetas de cada sección */
 /* Se crea la variable btnPrimario, para usar el extend, segun lo pide el desafio */
+.contenedorTextoPaginas h1, .contenedorTextoPlanes h1, .contenedorTextoServicios h1, .titulosSeccion h1 {
+  font-size: 5rem;
+  color: #EFF3F5;
+  text-align: center;
+  padding: 80px 0px 20px 0px; }
+  @media screen and (max-width: 640px) {
+    .contenedorTextoPaginas h1, .contenedorTextoPlanes h1, .contenedorTextoServicios h1, .titulosSeccion h1 {
+      text-align: left;
+      font-size: 4rem; } }
+
+.contenedorTextoPaginas h2, .contenedorTextoPlanes h2, .contenedorTextoServicios h2, .titulosSeccion h2 {
+  font-size: 3rem;
+  color: #EFF3F5;
+  text-align: center;
+  padding-bottom: 40px; }
+  @media screen and (max-width: 640px) {
+    .contenedorTextoPaginas h2, .contenedorTextoPlanes h2, .contenedorTextoServicios h2, .titulosSeccion h2 {
+      text-align: left;
+      font-size: 3rem; } }
+
 .btnPrimario, .btnMain, .btnPlanes, .btnNegativo, .btnServicios {
   color: #292f36;
   font-size: 20px;
@@ -1316,27 +1440,36 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
   background: linear-gradient(0deg, #3fa39c 0%, #2a817b 100%); }
 
 .contenedorDatosContacto {
-  padding: 20px 0px 100px 0px;
+  padding: 20px 2.5% 100px 2.5%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: transparent; }
-  .contenedorDatosContacto h2 {
+  .contenedorDatosContacto .datosContacto__h2 h2 {
     font-size: 50px;
     color: #EFF3F5;
     text-align: center;
     padding-bottom: 40px; }
-  .contenedorDatosContacto p {
+  .contenedorDatosContacto .datosContacto__p p {
     font-size: 20px;
     color: #EFF3F5;
     text-align: center; }
-    .contenedorDatosContacto p a {
+    .contenedorDatosContacto .datosContacto__p p a {
       color: #EFF3F5; }
+    @media screen and (max-width: 840px) {
+      .contenedorDatosContacto .datosContacto__p p {
+        text-align: left; } }
 
 .tarjeta, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos, .tarjeta__planes, .tarjeta__servicios {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
+  padding: 5%;
   border-radius: 16px;
-  font-size: 18px;
+  font-size: 1.8rem;
   background: rgba(255, 255, 255, 0.1);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -1351,18 +1484,22 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
     justify-content: center;
     border: 2px solid #292f36;
     background-color: rgba(239, 243, 245, 0.822);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 150px;
+    min-height: 150px;
     border-radius: 16px; }
+    .tarjeta .tarjeta__titulo h3, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__titulo h3, .tarjeta__planes .tarjeta__titulo h3, .tarjeta__servicios .tarjeta__titulo h3 {
+      text-align: center;
+      text-transform: uppercase; }
   .tarjeta .tarjeta__p, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__p, .tarjeta__planes .tarjeta__p, .tarjeta__servicios .tarjeta__p {
     color: #000;
     font-size: 18px;
-    padding: 20px 10px;
+    padding: 20px 0px;
     height: 80px;
     margin-bottom: 30px;
     line-height: 2.5rem; }
+
+.textoDestacado {
+  /* color: rgba(249, 194, 13, 0.891); */
+  font-weight: bolder; }
 
 /* Aqui están los mixins para el desafio */
 /* Este mixing lo incluí en las tarjetas de cada sección */
@@ -1394,7 +1531,7 @@ ancho máxino */
     .menuSocial ul li {
       display: inline-block; }
       .menuSocial ul li a {
-        font-size: 20px;
+        font-size: 2rem;
         color: #292f36;
         padding: 8px; }
   @media screen and (max-width: 850px) {
@@ -1424,13 +1561,13 @@ header {
       header .contenedor__header .contenedor__logo a {
         text-decoration: none; }
         header .contenedor__header .contenedor__logo a .logo {
-          font-size: 40px;
+          font-size: 4rem;
           font-weight: 700;
           color: #2F7DC2;
           background-color: #fff; }
         header .contenedor__header .contenedor__logo a .logo1 {
           margin: 0;
-          font-size: 40px;
+          font-size: 4rem;
           font-weight: 700;
           color: #fff; }
     header .contenedor__header .contenedor__menu {
@@ -1451,7 +1588,7 @@ header {
               top: 79px;
               left: 0%; } }
         header .contenedor__header .contenedor__menu nav .checkBtn {
-          font-size: 30px;
+          font-size: 3rem;
           color: #fff;
           float: right;
           cursor: pointer;
@@ -1483,13 +1620,13 @@ header {
               box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3); } }
           header .contenedor__header .contenedor__menu nav ul li a {
             text-decoration: none;
-            font-size: 20px;
+            font-size: 2rem;
             color: #fff;
             padding: 0px;
             text-align: right; }
             @media screen and (max-width: 850px) {
               header .contenedor__header .contenedor__menu nav ul li a {
-                font-size: 30px;
+                font-size: 3rem;
                 width: 80px; }
                 header .contenedor__header .contenedor__menu nav ul li a:hover {
                   color: #f9c10d; } }
@@ -1522,7 +1659,7 @@ footer {
   background-color: #3fa39c;
   margin-top: -1px; }
   footer .menuSocial__footer {
-    background-color: #EFF3F5; }
+    background-color: transparent; }
   footer .lineaFooter {
     height: 50px;
     padding-bottom: 60px;
@@ -1532,7 +1669,7 @@ footer {
     height: 80px;
     text-align: center; }
     footer .copyright span {
-      font-size: 20px;
+      font-size: 2rem;
       color: #292f36; }
 
 /* Fin estilos footer */
@@ -1608,36 +1745,38 @@ footer {
   .contenedor__presentacion .presentacion__texto__h1 h1 {
     text-align: left;
     color: #292f36;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 700;
     margin: 60px 0px 20px 0px; }
     .contenedor__presentacion .presentacion__texto__h1 h1 span {
       color: #f9c10d; }
     @media screen and (max-width: 1100px) {
       .contenedor__presentacion .presentacion__texto__h1 h1 {
-        font-size: 50px; } }
+        font-size: 5rem; } }
     @media screen and (max-width: 990px) {
       .contenedor__presentacion .presentacion__texto__h1 h1 {
         text-align: center;
-        font-size: 80px; } }
+        font-size: 8rem; } }
     @media screen and (max-width: 640px) {
       .contenedor__presentacion .presentacion__texto__h1 h1 {
-        font-size: 40px; } }
+        font-size: 4rem;
+        text-align: left; } }
   .contenedor__presentacion .presentacion__texto__h2 h2 {
     color: #444;
-    font-size: 30px;
+    font-size: 3rem;
     margin-bottom: 40px; }
     @media screen and (max-width: 1100px) {
       .contenedor__presentacion .presentacion__texto__h2 h2 {
-        font-size: 40px; } }
+        font-size: 4rem; } }
     @media screen and (max-width: 990px) {
       .contenedor__presentacion .presentacion__texto__h2 h2 {
-        font-size: 35px;
+        font-size: 3.5rem;
         text-align: center;
         margin-bottom: 60px; } }
     @media screen and (max-width: 640px) {
       .contenedor__presentacion .presentacion__texto__h2 h2 {
-        font-size: 30px; } }
+        font-size: 3rem;
+        text-align: left; } }
   .contenedor__presentacion .btnMain {
     animation: scale linear 2s infinite; }
 
@@ -1672,13 +1811,16 @@ footer {
 .seccionBeneficios {
   overflow: hidden; }
   .seccionBeneficios h2 {
-    font-size: 50px;
+    font-size: 5rem;
     text-align: center;
     padding-bottom: 60px; }
   .seccionBeneficios p {
-    font-size: 30px;
+    font-size: 3rem;
     text-align: center;
     padding-bottom: 100px; }
+    @media screen and (max-width: 640px) {
+      .seccionBeneficios p {
+        text-align: left; } }
   .seccionBeneficios .contenedorBeneficios {
     width: 80%;
     margin: auto;
@@ -1746,7 +1888,7 @@ footer {
           display: inline-block; }
           .seccionBeneficios .contenedorBeneficios .contenedorDots .beneficios .beneficios__p p {
             text-align: left;
-            font-size: 20px;
+            font-size: 2rem;
             padding: 0; }
         .seccionBeneficios .contenedorBeneficios .contenedorDots .beneficios .beneficios__img {
           display: flex;
@@ -1842,7 +1984,7 @@ footer {
   grid-area: idioma6; }
 
 .idiomas__h2 {
-  font-size: 40px;
+  font-size: 4rem;
   text-align: center;
   color: #292f36;
   padding-bottom: 60px; }
@@ -1870,7 +2012,7 @@ footer {
 
 .idiomas p {
   text-align: center;
-  font-size: 25px;
+  font-size: 2.5rem;
   color: #292f36;
   font-weight: bold;
   letter-spacing: 3px; }
@@ -1931,7 +2073,7 @@ footer {
       grid-area: planes4; }
     .catalogoPlanes .contenedor .planes__grid .planes__h2 {
       grid-area: planes__h2;
-      font-size: 40px;
+      font-size: 4rem;
       text-align: center;
       color: #fff;
       padding-bottom: 80px; }
@@ -1993,19 +2135,19 @@ footer {
         transition: all .3s; }
     .card .planes .planes__h3 {
       color: #eaeaea;
-      font-size: 30px;
+      font-size: 3rem;
       font-weight: bold;
       align-self: flex-start; }
       @media screen and (max-width: 640px) {
         .card .planes .planes__h3 {
-          font-size: 40px;
+          font-size: 4rem;
           width: 450px;
           height: 50px;
           text-align: center;
           align-self: center; } }
       @media screen and (max-width: 480px) {
         .card .planes .planes__h3 {
-          font-size: 30px;
+          font-size: 3rem;
           width: 250px;
           height: 40px;
           margin-top: 10px;
@@ -2013,20 +2155,20 @@ footer {
           align-self: center; } }
     .card .planes .planes__p {
       color: #fff;
-      font-size: 20px;
+      font-size: 2rem;
       width: 200px;
       height: 120px;
       align-self: flex-start; }
       @media screen and (max-width: 640px) {
         .card .planes .planes__p {
-          font-size: 30px;
+          font-size: 3rem;
           height: 150px;
           width: 350px;
           text-align: center;
           align-self: center; } }
       @media screen and (max-width: 480px) {
         .card .planes .planes__p {
-          font-size: 25px;
+          font-size: 2.5rem;
           height: 80px;
           width: 250px;
           text-align: center;
@@ -2066,7 +2208,7 @@ footer {
       grid-template-areas: "servicios__h2" "servicios1" "servicios2" "servicios3"; } }
     .catalogoServicios .contenedor__servicios-grid .servicios__h2 {
       grid-area: servicios__h2;
-      font-size: 40px;
+      font-size: 4rem;
       color: #292f36;
       text-align: center;
       padding-bottom: 80px; }
@@ -2074,13 +2216,13 @@ footer {
         .catalogoServicios .contenedor__servicios-grid .servicios__h2 {
           width: 300px;
           padding-bottom: 20px;
-          font-size: 30px; } }
+          font-size: 3rem; } }
       @media screen and (max-width: 480px) {
         .catalogoServicios .contenedor__servicios-grid .servicios__h2 {
           width: 300px;
           padding-top: 80px;
           padding-bottom: 20px;
-          font-size: 30px; } }
+          font-size: 3rem; } }
     .catalogoServicios .contenedor__servicios-grid .imgServicios {
       grid-area: imgServicios;
       display: flex;
@@ -2165,12 +2307,12 @@ footer {
         .catalogoServicios .contenedor__servicios-grid .servicios .servicios__texto .servicios__h3 {
           color: #fff;
           height: 50px;
-          font-size: 25px;
+          font-size: 2.5rem;
           text-align: left; }
           @media screen and (max-width: 640px) {
             .catalogoServicios .contenedor__servicios-grid .servicios .servicios__texto .servicios__h3 {
               color: #fff;
-              font-size: 30px;
+              font-size: 3rem;
               text-align: center; } }
       .catalogoServicios .contenedor__servicios-grid .servicios:hover {
         transform: translateY(-10px); }
@@ -2178,13 +2320,16 @@ footer {
           transform: scale(1.1); }
 
 .catalogoCursos {
-  width: 100%;
-  padding-top: 40px; }
+  width: 100%; }
   .catalogoCursos h1 {
-    font-size: 50px;
+    font-size: 5rem;
+    color: #EFF3F5;
     text-align: center;
-    margin: 40px 0px 80px 0px;
-    color: #EFF3F5; }
+    padding: 80px 0px 40px 0px; }
+    @media screen and (max-width: 640px) {
+      .catalogoCursos h1 {
+        text-align: left;
+        font-size: 4rem; } }
   .catalogoCursos .tarjetas__grid__layout {
     display: grid;
     justify-items: center;
@@ -2193,11 +2338,12 @@ footer {
     row-gap: 40px;
     grid-auto-rows: auto;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
-    .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__p p {
+    .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__texto {
       margin-bottom: 30px; }
     .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .nivelModalidad {
       display: flex;
-      height: 60px;
+      flex-wrap: wrap;
+      min-height: 60px;
       width: 100%;
       margin: 60px 0px 30px 0px; }
       .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .nivelModalidad .nivel, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .nivelModalidad .modalidad {
@@ -2216,22 +2362,23 @@ footer {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding-left: 10px; }
+      padding-left: 2.5%; }
       .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .idiomasDisponibles h3 {
-        font-size: 25px;
+        font-size: 2.5rem;
         color: rgba(249, 194, 13, 0.891);
-        padding-bottom: 10px; }
+        padding-bottom: 2.5%; }
     .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .listaIdiomas {
       color: #000;
-      padding-bottom: 30px;
+      padding-bottom: 10%;
       display: flex;
-      padding-left: 10px; }
+      flex-wrap: wrap;
+      padding-left: 2.5%; }
     .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .izquierda, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .derecha {
       display: inline-block;
       width: 50%; }
       .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .izquierda li, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .derecha li {
         list-style-type: none;
-        font-size: 18px; }
+        font-size: 1.8rem; }
 
 /* SE USA ESTE MAPA PARA MODIFICAR LOS COLORES, NO SOLO DEL 
 BACKGROUND, PERO TAMBIEN DE ALGUNOS ELEMENTOS. BASICAMENTE
@@ -2272,6 +2419,26 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
 /* Aqui están los mixins para el desafio */
 /* Este mixing lo incluí en las tarjetas de cada sección */
 /* Se crea la variable btnPrimario, para usar el extend, segun lo pide el desafio */
+.contenedorTextoPaginas h1, .contenedorTextoPlanes h1, .contenedorTextoServicios h1, .titulosSeccion h1 {
+  font-size: 5rem;
+  color: #EFF3F5;
+  text-align: center;
+  padding: 80px 0px 20px 0px; }
+  @media screen and (max-width: 640px) {
+    .contenedorTextoPaginas h1, .contenedorTextoPlanes h1, .contenedorTextoServicios h1, .titulosSeccion h1 {
+      text-align: left;
+      font-size: 4rem; } }
+
+.contenedorTextoPaginas h2, .contenedorTextoPlanes h2, .contenedorTextoServicios h2, .titulosSeccion h2 {
+  font-size: 3rem;
+  color: #EFF3F5;
+  text-align: center;
+  padding-bottom: 40px; }
+  @media screen and (max-width: 640px) {
+    .contenedorTextoPaginas h2, .contenedorTextoPlanes h2, .contenedorTextoServicios h2, .titulosSeccion h2 {
+      text-align: left;
+      font-size: 3rem; } }
+
 .btnPrimario, .btnMain, .btnPlanes, .btnNegativo, .btnServicios {
   color: #292f36;
   font-size: 20px;
@@ -2322,27 +2489,36 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
   background: linear-gradient(0deg, #3fa39c 0%, #2a817b 100%); }
 
 .contenedorDatosContacto {
-  padding: 20px 0px 100px 0px;
+  padding: 20px 2.5% 100px 2.5%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: transparent; }
-  .contenedorDatosContacto h2 {
+  .contenedorDatosContacto .datosContacto__h2 h2 {
     font-size: 50px;
     color: #EFF3F5;
     text-align: center;
     padding-bottom: 40px; }
-  .contenedorDatosContacto p {
+  .contenedorDatosContacto .datosContacto__p p {
     font-size: 20px;
     color: #EFF3F5;
     text-align: center; }
-    .contenedorDatosContacto p a {
+    .contenedorDatosContacto .datosContacto__p p a {
       color: #EFF3F5; }
+    @media screen and (max-width: 840px) {
+      .contenedorDatosContacto .datosContacto__p p {
+        text-align: left; } }
 
 .tarjeta, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos, .tarjeta__planes, .tarjeta__servicios {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
+  padding: 5%;
   border-radius: 16px;
-  font-size: 18px;
+  font-size: 1.8rem;
   background: rgba(255, 255, 255, 0.1);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -2357,18 +2533,22 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
     justify-content: center;
     border: 2px solid #292f36;
     background-color: rgba(239, 243, 245, 0.822);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 150px;
+    min-height: 150px;
     border-radius: 16px; }
+    .tarjeta .tarjeta__titulo h3, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__titulo h3, .tarjeta__planes .tarjeta__titulo h3, .tarjeta__servicios .tarjeta__titulo h3 {
+      text-align: center;
+      text-transform: uppercase; }
   .tarjeta .tarjeta__p, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__p, .tarjeta__planes .tarjeta__p, .tarjeta__servicios .tarjeta__p {
     color: #000;
     font-size: 18px;
-    padding: 20px 10px;
+    padding: 20px 0px;
     height: 80px;
     margin-bottom: 30px;
     line-height: 2.5rem; }
+
+.textoDestacado {
+  /* color: rgba(249, 194, 13, 0.891); */
+  font-weight: bolder; }
 
 /* Aqui están los mixins para el desafio */
 /* Este mixing lo incluí en las tarjetas de cada sección */
@@ -2411,6 +2591,26 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
 /* Aqui están los mixins para el desafio */
 /* Este mixing lo incluí en las tarjetas de cada sección */
 /* Se crea la variable btnPrimario, para usar el extend, segun lo pide el desafio */
+.contenedorTextoPaginas h1, .contenedorTextoPlanes h1, .contenedorTextoServicios h1, .titulosSeccion h1 {
+  font-size: 5rem;
+  color: #EFF3F5;
+  text-align: center;
+  padding: 80px 0px 20px 0px; }
+  @media screen and (max-width: 640px) {
+    .contenedorTextoPaginas h1, .contenedorTextoPlanes h1, .contenedorTextoServicios h1, .titulosSeccion h1 {
+      text-align: left;
+      font-size: 4rem; } }
+
+.contenedorTextoPaginas h2, .contenedorTextoPlanes h2, .contenedorTextoServicios h2, .titulosSeccion h2 {
+  font-size: 3rem;
+  color: #EFF3F5;
+  text-align: center;
+  padding-bottom: 40px; }
+  @media screen and (max-width: 640px) {
+    .contenedorTextoPaginas h2, .contenedorTextoPlanes h2, .contenedorTextoServicios h2, .titulosSeccion h2 {
+      text-align: left;
+      font-size: 3rem; } }
+
 .btnPrimario, .btnMain, .btnPlanes, .btnNegativo, .btnServicios {
   color: #292f36;
   font-size: 20px;
@@ -2461,27 +2661,36 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
   background: linear-gradient(0deg, #3fa39c 0%, #2a817b 100%); }
 
 .contenedorDatosContacto {
-  padding: 20px 0px 100px 0px;
+  padding: 20px 2.5% 100px 2.5%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: transparent; }
-  .contenedorDatosContacto h2 {
+  .contenedorDatosContacto .datosContacto__h2 h2 {
     font-size: 50px;
     color: #EFF3F5;
     text-align: center;
     padding-bottom: 40px; }
-  .contenedorDatosContacto p {
+  .contenedorDatosContacto .datosContacto__p p {
     font-size: 20px;
     color: #EFF3F5;
     text-align: center; }
-    .contenedorDatosContacto p a {
+    .contenedorDatosContacto .datosContacto__p p a {
       color: #EFF3F5; }
+    @media screen and (max-width: 840px) {
+      .contenedorDatosContacto .datosContacto__p p {
+        text-align: left; } }
 
 .tarjeta, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos, .tarjeta__planes, .tarjeta__servicios {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
+  padding: 5%;
   border-radius: 16px;
-  font-size: 18px;
+  font-size: 1.8rem;
   background: rgba(255, 255, 255, 0.1);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -2496,18 +2705,22 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
     justify-content: center;
     border: 2px solid #292f36;
     background-color: rgba(239, 243, 245, 0.822);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 150px;
+    min-height: 150px;
     border-radius: 16px; }
+    .tarjeta .tarjeta__titulo h3, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__titulo h3, .tarjeta__planes .tarjeta__titulo h3, .tarjeta__servicios .tarjeta__titulo h3 {
+      text-align: center;
+      text-transform: uppercase; }
   .tarjeta .tarjeta__p, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__p, .tarjeta__planes .tarjeta__p, .tarjeta__servicios .tarjeta__p {
     color: #000;
     font-size: 18px;
-    padding: 20px 10px;
+    padding: 20px 0px;
     height: 80px;
     margin-bottom: 30px;
     line-height: 2.5rem; }
+
+.textoDestacado {
+  /* color: rgba(249, 194, 13, 0.891); */
+  font-weight: bolder; }
 
 /* Aqui están los mixins para el desafio */
 /* Este mixing lo incluí en las tarjetas de cada sección */
@@ -2539,7 +2752,7 @@ ancho máxino */
     .menuSocial ul li {
       display: inline-block; }
       .menuSocial ul li a {
-        font-size: 20px;
+        font-size: 2rem;
         color: #292f36;
         padding: 8px; }
   @media screen and (max-width: 850px) {
@@ -2569,13 +2782,13 @@ header {
       header .contenedor__header .contenedor__logo a {
         text-decoration: none; }
         header .contenedor__header .contenedor__logo a .logo {
-          font-size: 40px;
+          font-size: 4rem;
           font-weight: 700;
           color: #2F7DC2;
           background-color: #fff; }
         header .contenedor__header .contenedor__logo a .logo1 {
           margin: 0;
-          font-size: 40px;
+          font-size: 4rem;
           font-weight: 700;
           color: #fff; }
     header .contenedor__header .contenedor__menu {
@@ -2596,7 +2809,7 @@ header {
               top: 79px;
               left: 0%; } }
         header .contenedor__header .contenedor__menu nav .checkBtn {
-          font-size: 30px;
+          font-size: 3rem;
           color: #fff;
           float: right;
           cursor: pointer;
@@ -2628,13 +2841,13 @@ header {
               box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3); } }
           header .contenedor__header .contenedor__menu nav ul li a {
             text-decoration: none;
-            font-size: 20px;
+            font-size: 2rem;
             color: #fff;
             padding: 0px;
             text-align: right; }
             @media screen and (max-width: 850px) {
               header .contenedor__header .contenedor__menu nav ul li a {
-                font-size: 30px;
+                font-size: 3rem;
                 width: 80px; }
                 header .contenedor__header .contenedor__menu nav ul li a:hover {
                   color: #f9c10d; } }
@@ -2667,7 +2880,7 @@ footer {
   background-color: #3fa39c;
   margin-top: -1px; }
   footer .menuSocial__footer {
-    background-color: #EFF3F5; }
+    background-color: transparent; }
   footer .lineaFooter {
     height: 50px;
     padding-bottom: 60px;
@@ -2677,7 +2890,7 @@ footer {
     height: 80px;
     text-align: center; }
     footer .copyright span {
-      font-size: 20px;
+      font-size: 2rem;
       color: #292f36; }
 
 /* Fin estilos footer */
@@ -2753,36 +2966,38 @@ footer {
   .contenedor__presentacion .presentacion__texto__h1 h1 {
     text-align: left;
     color: #292f36;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 700;
     margin: 60px 0px 20px 0px; }
     .contenedor__presentacion .presentacion__texto__h1 h1 span {
       color: #f9c10d; }
     @media screen and (max-width: 1100px) {
       .contenedor__presentacion .presentacion__texto__h1 h1 {
-        font-size: 50px; } }
+        font-size: 5rem; } }
     @media screen and (max-width: 990px) {
       .contenedor__presentacion .presentacion__texto__h1 h1 {
         text-align: center;
-        font-size: 80px; } }
+        font-size: 8rem; } }
     @media screen and (max-width: 640px) {
       .contenedor__presentacion .presentacion__texto__h1 h1 {
-        font-size: 40px; } }
+        font-size: 4rem;
+        text-align: left; } }
   .contenedor__presentacion .presentacion__texto__h2 h2 {
     color: #444;
-    font-size: 30px;
+    font-size: 3rem;
     margin-bottom: 40px; }
     @media screen and (max-width: 1100px) {
       .contenedor__presentacion .presentacion__texto__h2 h2 {
-        font-size: 40px; } }
+        font-size: 4rem; } }
     @media screen and (max-width: 990px) {
       .contenedor__presentacion .presentacion__texto__h2 h2 {
-        font-size: 35px;
+        font-size: 3.5rem;
         text-align: center;
         margin-bottom: 60px; } }
     @media screen and (max-width: 640px) {
       .contenedor__presentacion .presentacion__texto__h2 h2 {
-        font-size: 30px; } }
+        font-size: 3rem;
+        text-align: left; } }
   .contenedor__presentacion .btnMain {
     animation: scale linear 2s infinite; }
 
@@ -2817,13 +3032,16 @@ footer {
 .seccionBeneficios {
   overflow: hidden; }
   .seccionBeneficios h2 {
-    font-size: 50px;
+    font-size: 5rem;
     text-align: center;
     padding-bottom: 60px; }
   .seccionBeneficios p {
-    font-size: 30px;
+    font-size: 3rem;
     text-align: center;
     padding-bottom: 100px; }
+    @media screen and (max-width: 640px) {
+      .seccionBeneficios p {
+        text-align: left; } }
   .seccionBeneficios .contenedorBeneficios {
     width: 80%;
     margin: auto;
@@ -2891,7 +3109,7 @@ footer {
           display: inline-block; }
           .seccionBeneficios .contenedorBeneficios .contenedorDots .beneficios .beneficios__p p {
             text-align: left;
-            font-size: 20px;
+            font-size: 2rem;
             padding: 0; }
         .seccionBeneficios .contenedorBeneficios .contenedorDots .beneficios .beneficios__img {
           display: flex;
@@ -2987,7 +3205,7 @@ footer {
   grid-area: idioma6; }
 
 .idiomas__h2 {
-  font-size: 40px;
+  font-size: 4rem;
   text-align: center;
   color: #292f36;
   padding-bottom: 60px; }
@@ -3015,7 +3233,7 @@ footer {
 
 .idiomas p {
   text-align: center;
-  font-size: 25px;
+  font-size: 2.5rem;
   color: #292f36;
   font-weight: bold;
   letter-spacing: 3px; }
@@ -3076,7 +3294,7 @@ footer {
       grid-area: planes4; }
     .catalogoPlanes .contenedor .planes__grid .planes__h2 {
       grid-area: planes__h2;
-      font-size: 40px;
+      font-size: 4rem;
       text-align: center;
       color: #fff;
       padding-bottom: 80px; }
@@ -3138,19 +3356,19 @@ footer {
         transition: all .3s; }
     .card .planes .planes__h3 {
       color: #eaeaea;
-      font-size: 30px;
+      font-size: 3rem;
       font-weight: bold;
       align-self: flex-start; }
       @media screen and (max-width: 640px) {
         .card .planes .planes__h3 {
-          font-size: 40px;
+          font-size: 4rem;
           width: 450px;
           height: 50px;
           text-align: center;
           align-self: center; } }
       @media screen and (max-width: 480px) {
         .card .planes .planes__h3 {
-          font-size: 30px;
+          font-size: 3rem;
           width: 250px;
           height: 40px;
           margin-top: 10px;
@@ -3158,20 +3376,20 @@ footer {
           align-self: center; } }
     .card .planes .planes__p {
       color: #fff;
-      font-size: 20px;
+      font-size: 2rem;
       width: 200px;
       height: 120px;
       align-self: flex-start; }
       @media screen and (max-width: 640px) {
         .card .planes .planes__p {
-          font-size: 30px;
+          font-size: 3rem;
           height: 150px;
           width: 350px;
           text-align: center;
           align-self: center; } }
       @media screen and (max-width: 480px) {
         .card .planes .planes__p {
-          font-size: 25px;
+          font-size: 2.5rem;
           height: 80px;
           width: 250px;
           text-align: center;
@@ -3211,7 +3429,7 @@ footer {
       grid-template-areas: "servicios__h2" "servicios1" "servicios2" "servicios3"; } }
     .catalogoServicios .contenedor__servicios-grid .servicios__h2 {
       grid-area: servicios__h2;
-      font-size: 40px;
+      font-size: 4rem;
       color: #292f36;
       text-align: center;
       padding-bottom: 80px; }
@@ -3219,13 +3437,13 @@ footer {
         .catalogoServicios .contenedor__servicios-grid .servicios__h2 {
           width: 300px;
           padding-bottom: 20px;
-          font-size: 30px; } }
+          font-size: 3rem; } }
       @media screen and (max-width: 480px) {
         .catalogoServicios .contenedor__servicios-grid .servicios__h2 {
           width: 300px;
           padding-top: 80px;
           padding-bottom: 20px;
-          font-size: 30px; } }
+          font-size: 3rem; } }
     .catalogoServicios .contenedor__servicios-grid .imgServicios {
       grid-area: imgServicios;
       display: flex;
@@ -3310,29 +3528,17 @@ footer {
         .catalogoServicios .contenedor__servicios-grid .servicios .servicios__texto .servicios__h3 {
           color: #fff;
           height: 50px;
-          font-size: 25px;
+          font-size: 2.5rem;
           text-align: left; }
           @media screen and (max-width: 640px) {
             .catalogoServicios .contenedor__servicios-grid .servicios .servicios__texto .servicios__h3 {
               color: #fff;
-              font-size: 30px;
+              font-size: 3rem;
               text-align: center; } }
       .catalogoServicios .contenedor__servicios-grid .servicios:hover {
         transform: translateY(-10px); }
         .catalogoServicios .contenedor__servicios-grid .servicios:hover .serviciosImg img {
           transform: scale(1.1); }
-
-.contenedorTextoPlanes {
-  padding: 40px; }
-  .contenedorTextoPlanes div h1 {
-    font-size: 50px;
-    color: #EFF3F5;
-    text-align: center;
-    padding: 40px 0px 20px 0px; }
-  .contenedorTextoPlanes div h2 {
-    font-size: 30px;
-    color: #EFF3F5;
-    text-align: center; }
 
 .tarjetas__grid__layout {
   display: grid;
@@ -3347,7 +3553,6 @@ footer {
   display: flex;
   align-items: center;
   font-size: 20px;
-  padding: 10px;
   margin: 30px 0px 0px 0px; }
 
 .tarjeta__planes .precio {
@@ -3359,9 +3564,6 @@ footer {
   .tarjeta__planes .precio span {
     color: #bd4343; }
 
-.contenedorDatosContacto {
-  background-color: transparent; }
-
 /* SE USA ESTE MAPA PARA MODIFICAR LOS COLORES, NO SOLO DEL 
 BACKGROUND, PERO TAMBIEN DE ALGUNOS ELEMENTOS. BASICAMENTE
 ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
@@ -3401,6 +3603,26 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
 /* Aqui están los mixins para el desafio */
 /* Este mixing lo incluí en las tarjetas de cada sección */
 /* Se crea la variable btnPrimario, para usar el extend, segun lo pide el desafio */
+.contenedorTextoPaginas h1, .contenedorTextoPlanes h1, .contenedorTextoServicios h1, .titulosSeccion h1 {
+  font-size: 5rem;
+  color: #EFF3F5;
+  text-align: center;
+  padding: 80px 0px 20px 0px; }
+  @media screen and (max-width: 640px) {
+    .contenedorTextoPaginas h1, .contenedorTextoPlanes h1, .contenedorTextoServicios h1, .titulosSeccion h1 {
+      text-align: left;
+      font-size: 4rem; } }
+
+.contenedorTextoPaginas h2, .contenedorTextoPlanes h2, .contenedorTextoServicios h2, .titulosSeccion h2 {
+  font-size: 3rem;
+  color: #EFF3F5;
+  text-align: center;
+  padding-bottom: 40px; }
+  @media screen and (max-width: 640px) {
+    .contenedorTextoPaginas h2, .contenedorTextoPlanes h2, .contenedorTextoServicios h2, .titulosSeccion h2 {
+      text-align: left;
+      font-size: 3rem; } }
+
 .btnPrimario, .btnMain, .btnPlanes, .btnNegativo, .btnServicios {
   color: #292f36;
   font-size: 20px;
@@ -3451,27 +3673,36 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
   background: linear-gradient(0deg, #3fa39c 0%, #2a817b 100%); }
 
 .contenedorDatosContacto {
-  padding: 20px 0px 100px 0px;
+  padding: 20px 2.5% 100px 2.5%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: transparent; }
-  .contenedorDatosContacto h2 {
+  .contenedorDatosContacto .datosContacto__h2 h2 {
     font-size: 50px;
     color: #EFF3F5;
     text-align: center;
     padding-bottom: 40px; }
-  .contenedorDatosContacto p {
+  .contenedorDatosContacto .datosContacto__p p {
     font-size: 20px;
     color: #EFF3F5;
     text-align: center; }
-    .contenedorDatosContacto p a {
+    .contenedorDatosContacto .datosContacto__p p a {
       color: #EFF3F5; }
+    @media screen and (max-width: 840px) {
+      .contenedorDatosContacto .datosContacto__p p {
+        text-align: left; } }
 
 .tarjeta, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos, .tarjeta__planes, .tarjeta__servicios {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
+  padding: 5%;
   border-radius: 16px;
-  font-size: 18px;
+  font-size: 1.8rem;
   background: rgba(255, 255, 255, 0.1);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -3486,18 +3717,22 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
     justify-content: center;
     border: 2px solid #292f36;
     background-color: rgba(239, 243, 245, 0.822);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 150px;
+    min-height: 150px;
     border-radius: 16px; }
+    .tarjeta .tarjeta__titulo h3, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__titulo h3, .tarjeta__planes .tarjeta__titulo h3, .tarjeta__servicios .tarjeta__titulo h3 {
+      text-align: center;
+      text-transform: uppercase; }
   .tarjeta .tarjeta__p, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__p, .tarjeta__planes .tarjeta__p, .tarjeta__servicios .tarjeta__p {
     color: #000;
     font-size: 18px;
-    padding: 20px 10px;
+    padding: 20px 0px;
     height: 80px;
     margin-bottom: 30px;
     line-height: 2.5rem; }
+
+.textoDestacado {
+  /* color: rgba(249, 194, 13, 0.891); */
+  font-weight: bolder; }
 
 /* Aqui están los mixins para el desafio */
 /* Este mixing lo incluí en las tarjetas de cada sección */
@@ -3540,6 +3775,26 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
 /* Aqui están los mixins para el desafio */
 /* Este mixing lo incluí en las tarjetas de cada sección */
 /* Se crea la variable btnPrimario, para usar el extend, segun lo pide el desafio */
+.contenedorTextoPaginas h1, .contenedorTextoPlanes h1, .contenedorTextoServicios h1, .titulosSeccion h1 {
+  font-size: 5rem;
+  color: #EFF3F5;
+  text-align: center;
+  padding: 80px 0px 20px 0px; }
+  @media screen and (max-width: 640px) {
+    .contenedorTextoPaginas h1, .contenedorTextoPlanes h1, .contenedorTextoServicios h1, .titulosSeccion h1 {
+      text-align: left;
+      font-size: 4rem; } }
+
+.contenedorTextoPaginas h2, .contenedorTextoPlanes h2, .contenedorTextoServicios h2, .titulosSeccion h2 {
+  font-size: 3rem;
+  color: #EFF3F5;
+  text-align: center;
+  padding-bottom: 40px; }
+  @media screen and (max-width: 640px) {
+    .contenedorTextoPaginas h2, .contenedorTextoPlanes h2, .contenedorTextoServicios h2, .titulosSeccion h2 {
+      text-align: left;
+      font-size: 3rem; } }
+
 .btnPrimario, .btnMain, .btnPlanes, .btnNegativo, .btnServicios {
   color: #292f36;
   font-size: 20px;
@@ -3590,27 +3845,36 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
   background: linear-gradient(0deg, #3fa39c 0%, #2a817b 100%); }
 
 .contenedorDatosContacto {
-  padding: 20px 0px 100px 0px;
+  padding: 20px 2.5% 100px 2.5%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: transparent; }
-  .contenedorDatosContacto h2 {
+  .contenedorDatosContacto .datosContacto__h2 h2 {
     font-size: 50px;
     color: #EFF3F5;
     text-align: center;
     padding-bottom: 40px; }
-  .contenedorDatosContacto p {
+  .contenedorDatosContacto .datosContacto__p p {
     font-size: 20px;
     color: #EFF3F5;
     text-align: center; }
-    .contenedorDatosContacto p a {
+    .contenedorDatosContacto .datosContacto__p p a {
       color: #EFF3F5; }
+    @media screen and (max-width: 840px) {
+      .contenedorDatosContacto .datosContacto__p p {
+        text-align: left; } }
 
 .tarjeta, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos, .tarjeta__planes, .tarjeta__servicios {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
+  padding: 5%;
   border-radius: 16px;
-  font-size: 18px;
+  font-size: 1.8rem;
   background: rgba(255, 255, 255, 0.1);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -3625,18 +3889,22 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
     justify-content: center;
     border: 2px solid #292f36;
     background-color: rgba(239, 243, 245, 0.822);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 150px;
+    min-height: 150px;
     border-radius: 16px; }
+    .tarjeta .tarjeta__titulo h3, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__titulo h3, .tarjeta__planes .tarjeta__titulo h3, .tarjeta__servicios .tarjeta__titulo h3 {
+      text-align: center;
+      text-transform: uppercase; }
   .tarjeta .tarjeta__p, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__p, .tarjeta__planes .tarjeta__p, .tarjeta__servicios .tarjeta__p {
     color: #000;
     font-size: 18px;
-    padding: 20px 10px;
+    padding: 20px 0px;
     height: 80px;
     margin-bottom: 30px;
     line-height: 2.5rem; }
+
+.textoDestacado {
+  /* color: rgba(249, 194, 13, 0.891); */
+  font-weight: bolder; }
 
 /* Aqui están los mixins para el desafio */
 /* Este mixing lo incluí en las tarjetas de cada sección */
@@ -3668,7 +3936,7 @@ ancho máxino */
     .menuSocial ul li {
       display: inline-block; }
       .menuSocial ul li a {
-        font-size: 20px;
+        font-size: 2rem;
         color: #292f36;
         padding: 8px; }
   @media screen and (max-width: 850px) {
@@ -3698,13 +3966,13 @@ header {
       header .contenedor__header .contenedor__logo a {
         text-decoration: none; }
         header .contenedor__header .contenedor__logo a .logo {
-          font-size: 40px;
+          font-size: 4rem;
           font-weight: 700;
           color: #2F7DC2;
           background-color: #fff; }
         header .contenedor__header .contenedor__logo a .logo1 {
           margin: 0;
-          font-size: 40px;
+          font-size: 4rem;
           font-weight: 700;
           color: #fff; }
     header .contenedor__header .contenedor__menu {
@@ -3725,7 +3993,7 @@ header {
               top: 79px;
               left: 0%; } }
         header .contenedor__header .contenedor__menu nav .checkBtn {
-          font-size: 30px;
+          font-size: 3rem;
           color: #fff;
           float: right;
           cursor: pointer;
@@ -3757,13 +4025,13 @@ header {
               box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3); } }
           header .contenedor__header .contenedor__menu nav ul li a {
             text-decoration: none;
-            font-size: 20px;
+            font-size: 2rem;
             color: #fff;
             padding: 0px;
             text-align: right; }
             @media screen and (max-width: 850px) {
               header .contenedor__header .contenedor__menu nav ul li a {
-                font-size: 30px;
+                font-size: 3rem;
                 width: 80px; }
                 header .contenedor__header .contenedor__menu nav ul li a:hover {
                   color: #f9c10d; } }
@@ -3796,7 +4064,7 @@ footer {
   background-color: #3fa39c;
   margin-top: -1px; }
   footer .menuSocial__footer {
-    background-color: #EFF3F5; }
+    background-color: transparent; }
   footer .lineaFooter {
     height: 50px;
     padding-bottom: 60px;
@@ -3806,7 +4074,7 @@ footer {
     height: 80px;
     text-align: center; }
     footer .copyright span {
-      font-size: 20px;
+      font-size: 2rem;
       color: #292f36; }
 
 /* Fin estilos footer */
@@ -3882,36 +4150,38 @@ footer {
   .contenedor__presentacion .presentacion__texto__h1 h1 {
     text-align: left;
     color: #292f36;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 700;
     margin: 60px 0px 20px 0px; }
     .contenedor__presentacion .presentacion__texto__h1 h1 span {
       color: #f9c10d; }
     @media screen and (max-width: 1100px) {
       .contenedor__presentacion .presentacion__texto__h1 h1 {
-        font-size: 50px; } }
+        font-size: 5rem; } }
     @media screen and (max-width: 990px) {
       .contenedor__presentacion .presentacion__texto__h1 h1 {
         text-align: center;
-        font-size: 80px; } }
+        font-size: 8rem; } }
     @media screen and (max-width: 640px) {
       .contenedor__presentacion .presentacion__texto__h1 h1 {
-        font-size: 40px; } }
+        font-size: 4rem;
+        text-align: left; } }
   .contenedor__presentacion .presentacion__texto__h2 h2 {
     color: #444;
-    font-size: 30px;
+    font-size: 3rem;
     margin-bottom: 40px; }
     @media screen and (max-width: 1100px) {
       .contenedor__presentacion .presentacion__texto__h2 h2 {
-        font-size: 40px; } }
+        font-size: 4rem; } }
     @media screen and (max-width: 990px) {
       .contenedor__presentacion .presentacion__texto__h2 h2 {
-        font-size: 35px;
+        font-size: 3.5rem;
         text-align: center;
         margin-bottom: 60px; } }
     @media screen and (max-width: 640px) {
       .contenedor__presentacion .presentacion__texto__h2 h2 {
-        font-size: 30px; } }
+        font-size: 3rem;
+        text-align: left; } }
   .contenedor__presentacion .btnMain {
     animation: scale linear 2s infinite; }
 
@@ -3946,13 +4216,16 @@ footer {
 .seccionBeneficios {
   overflow: hidden; }
   .seccionBeneficios h2 {
-    font-size: 50px;
+    font-size: 5rem;
     text-align: center;
     padding-bottom: 60px; }
   .seccionBeneficios p {
-    font-size: 30px;
+    font-size: 3rem;
     text-align: center;
     padding-bottom: 100px; }
+    @media screen and (max-width: 640px) {
+      .seccionBeneficios p {
+        text-align: left; } }
   .seccionBeneficios .contenedorBeneficios {
     width: 80%;
     margin: auto;
@@ -4020,7 +4293,7 @@ footer {
           display: inline-block; }
           .seccionBeneficios .contenedorBeneficios .contenedorDots .beneficios .beneficios__p p {
             text-align: left;
-            font-size: 20px;
+            font-size: 2rem;
             padding: 0; }
         .seccionBeneficios .contenedorBeneficios .contenedorDots .beneficios .beneficios__img {
           display: flex;
@@ -4116,7 +4389,7 @@ footer {
   grid-area: idioma6; }
 
 .idiomas__h2 {
-  font-size: 40px;
+  font-size: 4rem;
   text-align: center;
   color: #292f36;
   padding-bottom: 60px; }
@@ -4144,7 +4417,7 @@ footer {
 
 .idiomas p {
   text-align: center;
-  font-size: 25px;
+  font-size: 2.5rem;
   color: #292f36;
   font-weight: bold;
   letter-spacing: 3px; }
@@ -4205,7 +4478,7 @@ footer {
       grid-area: planes4; }
     .catalogoPlanes .contenedor .planes__grid .planes__h2 {
       grid-area: planes__h2;
-      font-size: 40px;
+      font-size: 4rem;
       text-align: center;
       color: #fff;
       padding-bottom: 80px; }
@@ -4267,19 +4540,19 @@ footer {
         transition: all .3s; }
     .card .planes .planes__h3 {
       color: #eaeaea;
-      font-size: 30px;
+      font-size: 3rem;
       font-weight: bold;
       align-self: flex-start; }
       @media screen and (max-width: 640px) {
         .card .planes .planes__h3 {
-          font-size: 40px;
+          font-size: 4rem;
           width: 450px;
           height: 50px;
           text-align: center;
           align-self: center; } }
       @media screen and (max-width: 480px) {
         .card .planes .planes__h3 {
-          font-size: 30px;
+          font-size: 3rem;
           width: 250px;
           height: 40px;
           margin-top: 10px;
@@ -4287,20 +4560,20 @@ footer {
           align-self: center; } }
     .card .planes .planes__p {
       color: #fff;
-      font-size: 20px;
+      font-size: 2rem;
       width: 200px;
       height: 120px;
       align-self: flex-start; }
       @media screen and (max-width: 640px) {
         .card .planes .planes__p {
-          font-size: 30px;
+          font-size: 3rem;
           height: 150px;
           width: 350px;
           text-align: center;
           align-self: center; } }
       @media screen and (max-width: 480px) {
         .card .planes .planes__p {
-          font-size: 25px;
+          font-size: 2.5rem;
           height: 80px;
           width: 250px;
           text-align: center;
@@ -4340,7 +4613,7 @@ footer {
       grid-template-areas: "servicios__h2" "servicios1" "servicios2" "servicios3"; } }
     .catalogoServicios .contenedor__servicios-grid .servicios__h2 {
       grid-area: servicios__h2;
-      font-size: 40px;
+      font-size: 4rem;
       color: #292f36;
       text-align: center;
       padding-bottom: 80px; }
@@ -4348,13 +4621,13 @@ footer {
         .catalogoServicios .contenedor__servicios-grid .servicios__h2 {
           width: 300px;
           padding-bottom: 20px;
-          font-size: 30px; } }
+          font-size: 3rem; } }
       @media screen and (max-width: 480px) {
         .catalogoServicios .contenedor__servicios-grid .servicios__h2 {
           width: 300px;
           padding-top: 80px;
           padding-bottom: 20px;
-          font-size: 30px; } }
+          font-size: 3rem; } }
     .catalogoServicios .contenedor__servicios-grid .imgServicios {
       grid-area: imgServicios;
       display: flex;
@@ -4439,12 +4712,12 @@ footer {
         .catalogoServicios .contenedor__servicios-grid .servicios .servicios__texto .servicios__h3 {
           color: #fff;
           height: 50px;
-          font-size: 25px;
+          font-size: 2.5rem;
           text-align: left; }
           @media screen and (max-width: 640px) {
             .catalogoServicios .contenedor__servicios-grid .servicios .servicios__texto .servicios__h3 {
               color: #fff;
-              font-size: 30px;
+              font-size: 3rem;
               text-align: center; } }
       .catalogoServicios .contenedor__servicios-grid .servicios:hover {
         transform: translateY(-10px); }
@@ -4452,18 +4725,6 @@ footer {
           transform: scale(1.1); }
 
 .section__catalogoServicios {
-  padding-bottom: 40px; }
-
-.contenedorTextoServicios h1 {
-  font-size: 50px;
-  color: #EFF3F5;
-  text-align: center;
-  padding: 80px 0px 20px 0px; }
-
-.contenedorTextoServicios h2 {
-  font-size: 30px;
-  color: #EFF3F5;
-  text-align: center;
   padding-bottom: 40px; }
 
 .tajetas__grid__layout {
@@ -4476,13 +4737,181 @@ footer {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
 
 .tarjeta__servicios .tarjeta__p__servicios {
+  font-size: 20px;
+  margin: 30px 0px 30px 0px; }
+
+/* SE USA ESTE MAPA PARA MODIFICAR LOS COLORES, NO SOLO DEL 
+BACKGROUND, PERO TAMBIEN DE ALGUNOS ELEMENTOS. BASICAMENTE
+ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
+.bg-blue {
+  background: #2F7DC2; }
+
+.bg-green {
+  background: #3fa39c; }
+
+.bg-black {
+  background: #292f36; }
+
+.bg-yellow {
+  background: #f9c10d; }
+
+.bg-gray {
+  background: #eff3f5; }
+
+/* SE USA ESTE MAPA PARA MODIFICAR LOS COLORES, NO SOLO DEL 
+BACKGROUND, PERO TAMBIEN DE ALGUNOS ELEMENTOS. BASICAMENTE
+ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
+.bg-blue {
+  background: #2F7DC2; }
+
+.bg-green {
+  background: #3fa39c; }
+
+.bg-black {
+  background: #292f36; }
+
+.bg-yellow {
+  background: #f9c10d; }
+
+.bg-gray {
+  background: #eff3f5; }
+
+/* Aqui están los mixins para el desafio */
+/* Este mixing lo incluí en las tarjetas de cada sección */
+/* Se crea la variable btnPrimario, para usar el extend, segun lo pide el desafio */
+.contenedorTextoPaginas h1, .contenedorTextoPlanes h1, .contenedorTextoServicios h1, .titulosSeccion h1 {
+  font-size: 5rem;
+  color: #EFF3F5;
+  text-align: center;
+  padding: 80px 0px 20px 0px; }
+  @media screen and (max-width: 640px) {
+    .contenedorTextoPaginas h1, .contenedorTextoPlanes h1, .contenedorTextoServicios h1, .titulosSeccion h1 {
+      text-align: left;
+      font-size: 4rem; } }
+
+.contenedorTextoPaginas h2, .contenedorTextoPlanes h2, .contenedorTextoServicios h2, .titulosSeccion h2 {
+  font-size: 3rem;
+  color: #EFF3F5;
+  text-align: center;
+  padding-bottom: 40px; }
+  @media screen and (max-width: 640px) {
+    .contenedorTextoPaginas h2, .contenedorTextoPlanes h2, .contenedorTextoServicios h2, .titulosSeccion h2 {
+      text-align: left;
+      font-size: 3rem; } }
+
+.btnPrimario, .btnMain, .btnPlanes, .btnNegativo, .btnServicios {
+  color: #292f36;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 18px 30px;
+  border-radius: 16px;
+  border: 1px solid #292f36; }
+  .btnPrimario:hover, .btnMain:hover, .btnPlanes:hover, .btnNegativo:hover, .btnServicios:hover {
+    box-shadow: -3px 4px 14px 0px rgba(0, 0, 0, 0.63);
+    transition: 0.3s;
+    background-color: #f9c10d;
+    color: #292f36; }
+  .btnPrimario:active, .btnMain:active, .btnPlanes:active, .btnNegativo:active, .btnServicios:active {
+    box-shadow: inset 0.5px 0.5px 5px 0px rgba(0, 0, 0, 0.63); }
+
+.btnMain {
+  padding: 20px 70px;
+  background-color: transparent;
+  border: 1px solid #292f36;
+  display: inline-block; }
+  .btnMain:hover {
+    background-color: #f9c10d; }
+
+.btnPlanes, .btnNegativo {
+  display: block;
+  border-radius: 16px;
+  text-align: center; }
+
+.btnNegativo {
+  color: #eaeaea;
+  border: 1px solid #eaeaea; }
+  .btnNegativo:hover {
+    color: #292f36;
+    border: 1px solid #292f36; }
+
+.btnServicios {
+  padding: 10px 18px; }
+  @media screen and (max-width: 640px) {
+    .btnServicios {
+      text-align: center;
+      padding: 15px 18px;
+      display: block;
+      margin-top: 40px; } }
+
+.background__gradient {
+  background: #3fa39c;
+  background: linear-gradient(0deg, #3fa39c 0%, #2a817b 100%); }
+
+.contenedorDatosContacto {
+  padding: 20px 2.5% 100px 2.5%;
+  width: 90%;
+  margin: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  height: 200px;
-  font-size: 20px;
-  padding: 10px;
-  margin-bottom: 30px; }
+  background-color: transparent; }
+  .contenedorDatosContacto .datosContacto__h2 h2 {
+    font-size: 50px;
+    color: #EFF3F5;
+    text-align: center;
+    padding-bottom: 40px; }
+  .contenedorDatosContacto .datosContacto__p p {
+    font-size: 20px;
+    color: #EFF3F5;
+    text-align: center; }
+    .contenedorDatosContacto .datosContacto__p p a {
+      color: #EFF3F5; }
+    @media screen and (max-width: 840px) {
+      .contenedorDatosContacto .datosContacto__p p {
+        text-align: left; } }
 
+.tarjeta, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos, .tarjeta__planes, .tarjeta__servicios {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5%;
+  border-radius: 16px;
+  font-size: 1.8rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  transition: all .3s; }
+  .tarjeta:hover, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos:hover, .tarjeta__planes:hover, .tarjeta__servicios:hover {
+    transform: translateY(-10px) scale(1.03); }
+  .tarjeta .tarjeta__titulo, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__titulo, .tarjeta__planes .tarjeta__titulo, .tarjeta__servicios .tarjeta__titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #292f36;
+    background-color: rgba(239, 243, 245, 0.822);
+    min-height: 150px;
+    border-radius: 16px; }
+    .tarjeta .tarjeta__titulo h3, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__titulo h3, .tarjeta__planes .tarjeta__titulo h3, .tarjeta__servicios .tarjeta__titulo h3 {
+      text-align: center;
+      text-transform: uppercase; }
+  .tarjeta .tarjeta__p, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__p, .tarjeta__planes .tarjeta__p, .tarjeta__servicios .tarjeta__p {
+    color: #000;
+    font-size: 18px;
+    padding: 20px 0px;
+    height: 80px;
+    margin-bottom: 30px;
+    line-height: 2.5rem; }
+
+.textoDestacado {
+  /* color: rgba(249, 194, 13, 0.891); */
+  font-weight: bolder; }
+
+/* Aqui están los mixins para el desafio */
+/* Este mixing lo incluí en las tarjetas de cada sección */
 /* SE USA ESTE MAPA PARA MODIFICAR LOS COLORES, NO SOLO DEL 
 BACKGROUND, PERO TAMBIEN DE ALGUNOS ELEMENTOS. BASICAMENTE
 ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
@@ -4522,6 +4951,26 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
 /* Aqui están los mixins para el desafio */
 /* Este mixing lo incluí en las tarjetas de cada sección */
 /* Se crea la variable btnPrimario, para usar el extend, segun lo pide el desafio */
+.contenedorTextoPaginas h1, .contenedorTextoPlanes h1, .contenedorTextoServicios h1, .titulosSeccion h1 {
+  font-size: 5rem;
+  color: #EFF3F5;
+  text-align: center;
+  padding: 80px 0px 20px 0px; }
+  @media screen and (max-width: 640px) {
+    .contenedorTextoPaginas h1, .contenedorTextoPlanes h1, .contenedorTextoServicios h1, .titulosSeccion h1 {
+      text-align: left;
+      font-size: 4rem; } }
+
+.contenedorTextoPaginas h2, .contenedorTextoPlanes h2, .contenedorTextoServicios h2, .titulosSeccion h2 {
+  font-size: 3rem;
+  color: #EFF3F5;
+  text-align: center;
+  padding-bottom: 40px; }
+  @media screen and (max-width: 640px) {
+    .contenedorTextoPaginas h2, .contenedorTextoPlanes h2, .contenedorTextoServicios h2, .titulosSeccion h2 {
+      text-align: left;
+      font-size: 3rem; } }
+
 .btnPrimario, .btnMain, .btnPlanes, .btnNegativo, .btnServicios {
   color: #292f36;
   font-size: 20px;
@@ -4572,27 +5021,36 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
   background: linear-gradient(0deg, #3fa39c 0%, #2a817b 100%); }
 
 .contenedorDatosContacto {
-  padding: 20px 0px 100px 0px;
+  padding: 20px 2.5% 100px 2.5%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: transparent; }
-  .contenedorDatosContacto h2 {
+  .contenedorDatosContacto .datosContacto__h2 h2 {
     font-size: 50px;
     color: #EFF3F5;
     text-align: center;
     padding-bottom: 40px; }
-  .contenedorDatosContacto p {
+  .contenedorDatosContacto .datosContacto__p p {
     font-size: 20px;
     color: #EFF3F5;
     text-align: center; }
-    .contenedorDatosContacto p a {
+    .contenedorDatosContacto .datosContacto__p p a {
       color: #EFF3F5; }
+    @media screen and (max-width: 840px) {
+      .contenedorDatosContacto .datosContacto__p p {
+        text-align: left; } }
 
 .tarjeta, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos, .tarjeta__planes, .tarjeta__servicios {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
+  padding: 5%;
   border-radius: 16px;
-  font-size: 18px;
+  font-size: 1.8rem;
   background: rgba(255, 255, 255, 0.1);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -4607,157 +5065,22 @@ ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
     justify-content: center;
     border: 2px solid #292f36;
     background-color: rgba(239, 243, 245, 0.822);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 150px;
+    min-height: 150px;
     border-radius: 16px; }
-  .tarjeta .tarjeta__p, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__p, .tarjeta__planes .tarjeta__p, .tarjeta__servicios .tarjeta__p {
-    color: #000;
-    font-size: 18px;
-    padding: 20px 10px;
-    height: 80px;
-    margin-bottom: 30px;
-    line-height: 2.5rem; }
-
-/* Aqui están los mixins para el desafio */
-/* Este mixing lo incluí en las tarjetas de cada sección */
-/* SE USA ESTE MAPA PARA MODIFICAR LOS COLORES, NO SOLO DEL 
-BACKGROUND, PERO TAMBIEN DE ALGUNOS ELEMENTOS. BASICAMENTE
-ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
-.bg-blue {
-  background: #2F7DC2; }
-
-.bg-green {
-  background: #3fa39c; }
-
-.bg-black {
-  background: #292f36; }
-
-.bg-yellow {
-  background: #f9c10d; }
-
-.bg-gray {
-  background: #eff3f5; }
-
-/* SE USA ESTE MAPA PARA MODIFICAR LOS COLORES, NO SOLO DEL 
-BACKGROUND, PERO TAMBIEN DE ALGUNOS ELEMENTOS. BASICAMENTE
-ESTE MAPA CONTIENDE LA PALETA DE COLORES DEL SITIO*/
-.bg-blue {
-  background: #2F7DC2; }
-
-.bg-green {
-  background: #3fa39c; }
-
-.bg-black {
-  background: #292f36; }
-
-.bg-yellow {
-  background: #f9c10d; }
-
-.bg-gray {
-  background: #eff3f5; }
-
-/* Aqui están los mixins para el desafio */
-/* Este mixing lo incluí en las tarjetas de cada sección */
-/* Se crea la variable btnPrimario, para usar el extend, segun lo pide el desafio */
-.btnPrimario, .btnMain, .btnPlanes, .btnNegativo, .btnServicios {
-  color: #292f36;
-  font-size: 20px;
-  font-weight: 700;
-  text-decoration: none;
-  padding: 18px 30px;
-  border-radius: 16px;
-  border: 1px solid #292f36; }
-  .btnPrimario:hover, .btnMain:hover, .btnPlanes:hover, .btnNegativo:hover, .btnServicios:hover {
-    box-shadow: -3px 4px 14px 0px rgba(0, 0, 0, 0.63);
-    transition: 0.3s;
-    background-color: #f9c10d;
-    color: #292f36; }
-  .btnPrimario:active, .btnMain:active, .btnPlanes:active, .btnNegativo:active, .btnServicios:active {
-    box-shadow: inset 0.5px 0.5px 5px 0px rgba(0, 0, 0, 0.63); }
-
-.btnMain {
-  padding: 20px 70px;
-  background-color: transparent;
-  border: 1px solid #292f36;
-  display: inline-block; }
-  .btnMain:hover {
-    background-color: #f9c10d; }
-
-.btnPlanes, .btnNegativo {
-  display: block;
-  border-radius: 16px;
-  text-align: center; }
-
-.btnNegativo {
-  color: #eaeaea;
-  border: 1px solid #eaeaea; }
-  .btnNegativo:hover {
-    color: #292f36;
-    border: 1px solid #292f36; }
-
-.btnServicios {
-  padding: 10px 18px; }
-  @media screen and (max-width: 640px) {
-    .btnServicios {
+    .tarjeta .tarjeta__titulo h3, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__titulo h3, .tarjeta__planes .tarjeta__titulo h3, .tarjeta__servicios .tarjeta__titulo h3 {
       text-align: center;
-      padding: 15px 18px;
-      display: block;
-      margin-top: 40px; } }
-
-.background__gradient {
-  background: #3fa39c;
-  background: linear-gradient(0deg, #3fa39c 0%, #2a817b 100%); }
-
-.contenedorDatosContacto {
-  padding: 20px 0px 100px 0px;
-  background-color: transparent; }
-  .contenedorDatosContacto h2 {
-    font-size: 50px;
-    color: #EFF3F5;
-    text-align: center;
-    padding-bottom: 40px; }
-  .contenedorDatosContacto p {
-    font-size: 20px;
-    color: #EFF3F5;
-    text-align: center; }
-    .contenedorDatosContacto p a {
-      color: #EFF3F5; }
-
-.tarjeta, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos, .tarjeta__planes, .tarjeta__servicios {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
-  border-radius: 16px;
-  font-size: 18px;
-  background: rgba(255, 255, 255, 0.1);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 16px;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  transition: all .3s; }
-  .tarjeta:hover, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos:hover, .tarjeta__planes:hover, .tarjeta__servicios:hover {
-    transform: translateY(-10px) scale(1.03); }
-  .tarjeta .tarjeta__titulo, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__titulo, .tarjeta__planes .tarjeta__titulo, .tarjeta__servicios .tarjeta__titulo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #292f36;
-    background-color: rgba(239, 243, 245, 0.822);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 150px;
-    border-radius: 16px; }
+      text-transform: uppercase; }
   .tarjeta .tarjeta__p, .catalogoCursos .tarjetas__grid__layout .tarjeta__cursos .tarjeta__p, .tarjeta__planes .tarjeta__p, .tarjeta__servicios .tarjeta__p {
     color: #000;
     font-size: 18px;
-    padding: 20px 10px;
+    padding: 20px 0px;
     height: 80px;
     margin-bottom: 30px;
     line-height: 2.5rem; }
+
+.textoDestacado {
+  /* color: rgba(249, 194, 13, 0.891); */
+  font-weight: bolder; }
 
 /* Aqui están los mixins para el desafio */
 /* Este mixing lo incluí en las tarjetas de cada sección */
@@ -4789,7 +5112,7 @@ ancho máxino */
     .menuSocial ul li {
       display: inline-block; }
       .menuSocial ul li a {
-        font-size: 20px;
+        font-size: 2rem;
         color: #292f36;
         padding: 8px; }
   @media screen and (max-width: 850px) {
@@ -4819,13 +5142,13 @@ header {
       header .contenedor__header .contenedor__logo a {
         text-decoration: none; }
         header .contenedor__header .contenedor__logo a .logo {
-          font-size: 40px;
+          font-size: 4rem;
           font-weight: 700;
           color: #2F7DC2;
           background-color: #fff; }
         header .contenedor__header .contenedor__logo a .logo1 {
           margin: 0;
-          font-size: 40px;
+          font-size: 4rem;
           font-weight: 700;
           color: #fff; }
     header .contenedor__header .contenedor__menu {
@@ -4846,7 +5169,7 @@ header {
               top: 79px;
               left: 0%; } }
         header .contenedor__header .contenedor__menu nav .checkBtn {
-          font-size: 30px;
+          font-size: 3rem;
           color: #fff;
           float: right;
           cursor: pointer;
@@ -4878,13 +5201,13 @@ header {
               box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3); } }
           header .contenedor__header .contenedor__menu nav ul li a {
             text-decoration: none;
-            font-size: 20px;
+            font-size: 2rem;
             color: #fff;
             padding: 0px;
             text-align: right; }
             @media screen and (max-width: 850px) {
               header .contenedor__header .contenedor__menu nav ul li a {
-                font-size: 30px;
+                font-size: 3rem;
                 width: 80px; }
                 header .contenedor__header .contenedor__menu nav ul li a:hover {
                   color: #f9c10d; } }
@@ -4917,7 +5240,7 @@ footer {
   background-color: #3fa39c;
   margin-top: -1px; }
   footer .menuSocial__footer {
-    background-color: #EFF3F5; }
+    background-color: transparent; }
   footer .lineaFooter {
     height: 50px;
     padding-bottom: 60px;
@@ -4927,7 +5250,7 @@ footer {
     height: 80px;
     text-align: center; }
     footer .copyright span {
-      font-size: 20px;
+      font-size: 2rem;
       color: #292f36; }
 
 /* Fin estilos footer */
@@ -5003,36 +5326,38 @@ footer {
   .contenedor__presentacion .presentacion__texto__h1 h1 {
     text-align: left;
     color: #292f36;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 700;
     margin: 60px 0px 20px 0px; }
     .contenedor__presentacion .presentacion__texto__h1 h1 span {
       color: #f9c10d; }
     @media screen and (max-width: 1100px) {
       .contenedor__presentacion .presentacion__texto__h1 h1 {
-        font-size: 50px; } }
+        font-size: 5rem; } }
     @media screen and (max-width: 990px) {
       .contenedor__presentacion .presentacion__texto__h1 h1 {
         text-align: center;
-        font-size: 80px; } }
+        font-size: 8rem; } }
     @media screen and (max-width: 640px) {
       .contenedor__presentacion .presentacion__texto__h1 h1 {
-        font-size: 40px; } }
+        font-size: 4rem;
+        text-align: left; } }
   .contenedor__presentacion .presentacion__texto__h2 h2 {
     color: #444;
-    font-size: 30px;
+    font-size: 3rem;
     margin-bottom: 40px; }
     @media screen and (max-width: 1100px) {
       .contenedor__presentacion .presentacion__texto__h2 h2 {
-        font-size: 40px; } }
+        font-size: 4rem; } }
     @media screen and (max-width: 990px) {
       .contenedor__presentacion .presentacion__texto__h2 h2 {
-        font-size: 35px;
+        font-size: 3.5rem;
         text-align: center;
         margin-bottom: 60px; } }
     @media screen and (max-width: 640px) {
       .contenedor__presentacion .presentacion__texto__h2 h2 {
-        font-size: 30px; } }
+        font-size: 3rem;
+        text-align: left; } }
   .contenedor__presentacion .btnMain {
     animation: scale linear 2s infinite; }
 
@@ -5067,13 +5392,16 @@ footer {
 .seccionBeneficios {
   overflow: hidden; }
   .seccionBeneficios h2 {
-    font-size: 50px;
+    font-size: 5rem;
     text-align: center;
     padding-bottom: 60px; }
   .seccionBeneficios p {
-    font-size: 30px;
+    font-size: 3rem;
     text-align: center;
     padding-bottom: 100px; }
+    @media screen and (max-width: 640px) {
+      .seccionBeneficios p {
+        text-align: left; } }
   .seccionBeneficios .contenedorBeneficios {
     width: 80%;
     margin: auto;
@@ -5141,7 +5469,7 @@ footer {
           display: inline-block; }
           .seccionBeneficios .contenedorBeneficios .contenedorDots .beneficios .beneficios__p p {
             text-align: left;
-            font-size: 20px;
+            font-size: 2rem;
             padding: 0; }
         .seccionBeneficios .contenedorBeneficios .contenedorDots .beneficios .beneficios__img {
           display: flex;
@@ -5237,7 +5565,7 @@ footer {
   grid-area: idioma6; }
 
 .idiomas__h2 {
-  font-size: 40px;
+  font-size: 4rem;
   text-align: center;
   color: #292f36;
   padding-bottom: 60px; }
@@ -5265,7 +5593,7 @@ footer {
 
 .idiomas p {
   text-align: center;
-  font-size: 25px;
+  font-size: 2.5rem;
   color: #292f36;
   font-weight: bold;
   letter-spacing: 3px; }
@@ -5326,7 +5654,7 @@ footer {
       grid-area: planes4; }
     .catalogoPlanes .contenedor .planes__grid .planes__h2 {
       grid-area: planes__h2;
-      font-size: 40px;
+      font-size: 4rem;
       text-align: center;
       color: #fff;
       padding-bottom: 80px; }
@@ -5388,19 +5716,19 @@ footer {
         transition: all .3s; }
     .card .planes .planes__h3 {
       color: #eaeaea;
-      font-size: 30px;
+      font-size: 3rem;
       font-weight: bold;
       align-self: flex-start; }
       @media screen and (max-width: 640px) {
         .card .planes .planes__h3 {
-          font-size: 40px;
+          font-size: 4rem;
           width: 450px;
           height: 50px;
           text-align: center;
           align-self: center; } }
       @media screen and (max-width: 480px) {
         .card .planes .planes__h3 {
-          font-size: 30px;
+          font-size: 3rem;
           width: 250px;
           height: 40px;
           margin-top: 10px;
@@ -5408,20 +5736,20 @@ footer {
           align-self: center; } }
     .card .planes .planes__p {
       color: #fff;
-      font-size: 20px;
+      font-size: 2rem;
       width: 200px;
       height: 120px;
       align-self: flex-start; }
       @media screen and (max-width: 640px) {
         .card .planes .planes__p {
-          font-size: 30px;
+          font-size: 3rem;
           height: 150px;
           width: 350px;
           text-align: center;
           align-self: center; } }
       @media screen and (max-width: 480px) {
         .card .planes .planes__p {
-          font-size: 25px;
+          font-size: 2.5rem;
           height: 80px;
           width: 250px;
           text-align: center;
@@ -5461,7 +5789,7 @@ footer {
       grid-template-areas: "servicios__h2" "servicios1" "servicios2" "servicios3"; } }
     .catalogoServicios .contenedor__servicios-grid .servicios__h2 {
       grid-area: servicios__h2;
-      font-size: 40px;
+      font-size: 4rem;
       color: #292f36;
       text-align: center;
       padding-bottom: 80px; }
@@ -5469,13 +5797,13 @@ footer {
         .catalogoServicios .contenedor__servicios-grid .servicios__h2 {
           width: 300px;
           padding-bottom: 20px;
-          font-size: 30px; } }
+          font-size: 3rem; } }
       @media screen and (max-width: 480px) {
         .catalogoServicios .contenedor__servicios-grid .servicios__h2 {
           width: 300px;
           padding-top: 80px;
           padding-bottom: 20px;
-          font-size: 30px; } }
+          font-size: 3rem; } }
     .catalogoServicios .contenedor__servicios-grid .imgServicios {
       grid-area: imgServicios;
       display: flex;
@@ -5560,12 +5888,12 @@ footer {
         .catalogoServicios .contenedor__servicios-grid .servicios .servicios__texto .servicios__h3 {
           color: #fff;
           height: 50px;
-          font-size: 25px;
+          font-size: 2.5rem;
           text-align: left; }
           @media screen and (max-width: 640px) {
             .catalogoServicios .contenedor__servicios-grid .servicios .servicios__texto .servicios__h3 {
               color: #fff;
-              font-size: 30px;
+              font-size: 3rem;
               text-align: center; } }
       .catalogoServicios .contenedor__servicios-grid .servicios:hover {
         transform: translateY(-10px); }
@@ -5576,19 +5904,9 @@ footer {
   color: #EFF3F5;
   padding-bottom: 100px; }
 
-.titulosSeccion h1 {
-  font-size: 50px;
-  text-align: center;
-  padding-top: 80px; }
-
-.titulosSeccion h2 {
-  font-size: 40px;
-  padding-bottom: 80px;
-  text-align: center; }
-
 .contenedorForm {
   background-color: #EFF3F5;
-  padding: 60px;
+  padding: 5%;
   color: #292f36;
   border-radius: 16px;
   box-shadow: -3px 4px 14px 0px rgba(0, 0, 0, 0.63);
@@ -5600,7 +5918,6 @@ footer {
   grid-template-areas: "formulario formulario formulario texto texto" "mapa mapa mapa mapa mapa"; }
   @media screen and (max-width: 975px) {
     .contenedorForm {
-      column-gap: 20px;
       row-gap: 40px;
       grid-template-columns: 1fr;
       grid-template-rows: auto auto auto;

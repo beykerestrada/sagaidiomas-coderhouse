@@ -38,7 +38,7 @@ ancho máxino */
             display: inline-block;
 
             a {
-                font-size: 20px;
+                font-size: 2rem;
                 color: #292f36;
                 padding: 8px;
             }
@@ -76,7 +76,7 @@ header {
                 text-decoration: none;
 
                 .logo {
-                    font-size: 40px;
+                    font-size: 4rem;
                     font-weight: 700;
                     color: map-get($background, blue);
                     background-color: #fff;
@@ -84,7 +84,7 @@ header {
 
                 .logo1 {
                     margin: 0;
-                    font-size: 40px;
+                    font-size: 4rem;
                     font-weight: 700;
                     color: #fff;
                 }
@@ -118,7 +118,7 @@ header {
                 }
 
                 .checkBtn {
-                    font-size: 30px;
+                    font-size: 3rem;
                     color: #fff;
                     float: right;
                     cursor: pointer;
@@ -158,13 +158,13 @@ header {
 
                         a {
                             text-decoration: none;
-                            font-size: 20px;
+                            font-size: 2rem;
                             color: #fff;
                             padding: 0px;
                             text-align: right;
 
                             @media screen and (max-width: 850px) {
-                                font-size: 30px;
+                                font-size: 3rem;
                                 width: 80px;
 
                                 &:hover {
@@ -217,7 +217,7 @@ footer {
     margin-top: -1px;
 
     .menuSocial__footer {
-        background-color: #EFF3F5;
+        background-color: transparent;
     }
 
     .lineaFooter {
@@ -232,7 +232,7 @@ footer {
         text-align: center;
 
         span {
-            font-size: 20px;
+            font-size: 2rem;
             color: #292f36;
         }
     }
@@ -346,7 +346,7 @@ footer {
         h1 {
             text-align: left;
             color: #292f36;
-            font-size: 60px;
+            font-size: 6rem;
             font-weight: 700;
             margin: 60px 0px 20px 0px;
 
@@ -355,37 +355,39 @@ footer {
             }
 
             @media screen and (max-width: 1100px) {
-                font-size: 50px;
+                font-size: 5rem;
             }
 
             @media screen and (max-width: 990px) {
                 text-align: center;
-                font-size: 80px;
+                font-size: 8rem;
             }
 
             @media screen and (max-width: 640px) {
-                font-size: 40px;
+                font-size: 4rem;
+                text-align: left;
             }
         }
     }
 
     .presentacion__texto__h2 h2 {
         color: #444;
-        font-size: 30px;
+        font-size: 3rem;
         margin-bottom: 40px;
 
         @media screen and (max-width: 1100px) {
-            font-size: 40px;
+            font-size: 4rem;
         }
 
         @media screen and (max-width: 990px) {
-            font-size: 35px;
+            font-size: 3.5rem;
             text-align: center;
             margin-bottom: 60px;
         }
 
         @media screen and (max-width: 640px) {
-            font-size: 30px;
+            font-size: 3rem;
+            text-align: left;
         }
     }
 
@@ -443,15 +445,20 @@ footer {
     overflow: hidden;
 
     h2 {
-        font-size: 50px;
+        font-size: 5rem;
         text-align: center;
         padding-bottom: 60px;
+        
     }
 
     p {
-        font-size: 30px;
+        font-size: 3rem;
         text-align: center;
         padding-bottom: 100px;
+        @media screen and (max-width: 640px) {
+            text-align: left;
+            
+        }
     }
 
     .contenedorBeneficios {
@@ -529,7 +536,7 @@ footer {
 
                     p {
                         text-align: left;
-                        font-size: 20px;
+                        font-size: 2rem;
                         padding: 0;
                     }
                 }
@@ -684,10 +691,11 @@ footer {
 }
 
 .idiomas__h2 {
-    font-size: 40px;
+    font-size: 4rem;
     text-align: center;
     color: #292f36;
     padding-bottom: 60px;
+   
 }
 
 .idiomas {
@@ -720,7 +728,7 @@ footer {
 
 .idiomas p {
     text-align: center;
-    font-size: 25px;
+    font-size: 2.5rem;
     color: #292f36;
     font-weight: bold;
     letter-spacing: 3px;
@@ -815,10 +823,12 @@ footer {
 
             .planes__h2 {
                 grid-area: planes__h2;
-                font-size: 40px;
+                font-size: 4rem;
                 text-align: center;
                 color: #fff;
                 padding-bottom: 80px;
+                
+                
             }
         }
     }
@@ -888,12 +898,12 @@ footer {
 
         .planes__h3 {
             color: #eaeaea;
-            font-size: 30px;
+            font-size: 3rem;
             font-weight: bold;
             align-self: flex-start;
 
             @media screen and (max-width: 640px) {
-                font-size: 40px;
+                font-size: 4rem;
                 width: 450px;
                 height: 50px;
                 text-align: center;
@@ -901,7 +911,7 @@ footer {
             }
 
             @media screen and (max-width: 480px) {
-                font-size: 30px;
+                font-size: 3rem;
                 width: 250px;
                 height: 40px;
                 margin-top: 10px;
@@ -912,13 +922,13 @@ footer {
 
         .planes__p {
             color: #fff;
-            font-size: 20px;
+            font-size: 2rem;
             width: 200px;
             height: 120px;
             align-self: flex-start;
 
             @media screen and (max-width: 640px) {
-                font-size: 30px;
+                font-size: 3rem;
                 height: 150px;
                 width: 350px;
                 text-align: center;
@@ -926,7 +936,7 @@ footer {
             }
 
             @media screen and (max-width: 480px) {
-                font-size: 25px;
+                font-size: 2.5rem;
                 height: 80px;
                 width: 250px;
                 text-align: center;
@@ -995,7 +1005,7 @@ footer {
 
         .servicios__h2 {
             grid-area: servicios__h2;
-            font-size: 40px;
+            font-size: 4rem;
             color: #292f36;
             text-align: center;
             padding-bottom: 80px;
@@ -1003,14 +1013,14 @@ footer {
             @media screen and (max-width: 640px) {
                 width: 300px;
                 padding-bottom: 20px;
-                font-size: 30px;
+                font-size: 3rem;
             }
 
             @media screen and (max-width: 480px) {
                 width: 300px;
                 padding-top: 80px;
                 padding-bottom: 20px;
-                font-size: 30px;
+                font-size: 3rem;
             }
         }
 
@@ -1114,12 +1124,12 @@ footer {
                 .servicios__h3 {
                     color: #fff;
                     height: 50px;
-                    font-size: 25px;
+                    font-size: 2.5rem;
                     text-align: left;
 
                     @media screen and (max-width: 640px) {
                         color: #fff;
-                        font-size: 30px;
+                        font-size: 3rem;
                         text-align: center;
                     }
                 }

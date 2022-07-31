@@ -8,19 +8,7 @@
 }
 
 .contenedorTextoServicios {
-
-    h1 {
-        font-size: 50px;
-        color: #EFF3F5;
-        text-align: center;
-        padding: 80px 0px 20px 0px;
-    }
-    h2 {
-        font-size: 30px;
-        color: #EFF3F5;
-        text-align: center;
-        padding-bottom: 40px;
-    }
+    @extend .contenedorTextoPaginas;
 }
 
 .tajetas__grid__layout {
@@ -30,12 +18,7 @@
 .tarjeta__servicios {
     @extend .tarjeta;
     .tarjeta__p__servicios {
-        display: flex;
-        align-items: center;
-        height: 200px;
         font-size: 20px;
-        padding: 10px;
-        margin-bottom: 30px;
-        
+        margin: 30px 0px 30px 0px;
     }
 }
