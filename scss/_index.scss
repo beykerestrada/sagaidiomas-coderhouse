@@ -522,47 +522,8 @@ header {
                     }
                 }
             }
-
-            .dotsBase {
-                position: absolute;
-                top: -55px;
-                height: 160px;
-                width: 150px;
-                border-bottom: 5px dashed #5b63a4;
-
-                @media screen and (max-width: 880px) {
-                    height: 60px;
-                    border-bottom: none;
-                    top: -70px;
-                }
-            }
-
-            .dots1 {
-                @extend .dotsBase;
-                left: -160px;
-                border-left: 5px dashed #5b63a4;
-                border-bottom-left-radius: 16px;
-
-                @media screen and (max-width: 880px) {
-                    border-bottom-left-radius: 0px;
-                    left: 50%;
-                }
-            }
-
-            .dots2 {
-                @extend .dotsBase;
-                right: -160px;
-                border-right: 5px dashed #5b63a4;
-                border-bottom-right-radius: 16px;
-
-                @media screen and (max-width: 880px) {
-                    border-bottom-right-radius: 0px;
-                    right: 50%;
-                }
-            }
         }
     }
-
     .separador {
         margin-bottom: -5px;
     }
